@@ -1,0 +1,30 @@
+.social {
+  display: flex;
+
+  // .social__item
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  // .social__link
+  &__link {}
+
+  // .social__img
+  &__img {}
+}
+
+.social-wrapper {
+  display: flex;
+  justify-content: center;
+
+  &__text {
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  .social {
+    margin-right: 30px;
+  }
+}

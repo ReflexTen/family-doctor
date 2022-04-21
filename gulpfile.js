@@ -21,7 +21,7 @@ function browsersync() {
 }
 
 const htmlInclude = () => {
-  return src(['app/html/*.html'])
+  return src(['app/html/*.html']) // Находит любой .html файл в папке "html", куда будем подключать другие .html файлы													
     .pipe(fileInclude({
       prefix: '@',
       basepath: '@file',
@@ -45,7 +45,7 @@ function styles() {
 function scripts() {
   return src([
       'node_modules/jquery/dist/jquery.js',
-      
+      'node_modules/slick-carousel/slick/slick.js',
 
       
       'app/js/main.js'
