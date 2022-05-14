@@ -1,0 +1,116 @@
+.registration {
+
+  // .registration__wrapper
+  &__wrapper {
+    padding: 26px 0;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+
+
+    @include media-1 {
+      background-position: right 80% bottom 0;
+    }
+
+    @include media-2 {
+      padding: 11px 0;
+    }
+
+    @include media-3 {
+      background-position: right 65% bottom 0;
+      // background-size: 100%;
+      padding: 36px 0;
+    }
+
+    @include media-3 {
+      background-position: right 75% bottom 0;
+      padding: 11px 0;
+    }
+  }
+
+  // .registration__content
+  &__content {
+    max-width: 520px;
+    width: 100%;
+    margin-left: auto;
+    padding: 30px 3px 25px;
+    background-color: $blue-100;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: center;
+
+    @include media-3 {
+      max-width: 482px;
+      background-color: rgba(#aef3dc, 0.8);
+    }
+
+    @include media-4 {
+      max-width: 400px;
+    }
+  }
+
+  // .registration__title
+  &__title {
+    margin: 0 auto 20px;
+    max-width: 410px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    color: $blue-900;
+
+    @include media-4 {
+      font-size: 20px;
+    }
+  }
+
+  // .registration__subtitle
+  &__subtitle {
+    margin: 0 auto 30px;
+    max-width: 410px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    color: $blue-700;
+
+    @include media-4 {
+      font-size: 18px;
+    }
+  }
+
+  // .registration__form
+  &__form {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  // .registration__input
+  &__input {
+    // display: block;
+    width: 100%;
+    padding: 7.5px;
+    margin-bottom: 20px;
+    border: 2px solid $blue-300;
+    border-radius: 30px;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: $blue-500;
+    background-color: $white;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+
+    &::placeholder {
+      line-height: 1.2;
+      color: $blue-300;
+    }
+  }
+
+  // .registration__button
+  &__button {
+    width: 100%;
+
+  }
+}

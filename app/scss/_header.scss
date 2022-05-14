@@ -1,0 +1,403 @@
+.header {
+  @include media-4 {
+    background-color: $blue-100;
+  }
+
+  // .header__top
+  &__top {}
+
+  // .header__menu
+  &__menu {}
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 30px 0 36px;
+
+  @include media-2 {
+    align-items: center;
+  }
+
+  @include media-4 {
+    padding: 10px 0 15px;
+  }
+
+  // .header-top__info
+  &__info {
+    display: flex;
+    align-items: center;
+    // max-width: 770px;
+    // width: 100%;
+    // justify-content: space-between;
+  }
+
+
+  // .header-top__logo-box
+  &__logo-box {
+    margin-right: 60px;
+
+    @include media-1 {
+      margin-right: 13px;
+    }
+
+    @include media-2 {
+      margin-right: 30px;
+    }
+  }
+
+  // .header-top__address
+  &__address {}
+
+  // .header-top__inner
+  &__inner {
+    display: flex;
+  }
+
+  // .header-top__item
+  &__item {
+    max-width: 190px;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-right: 60px;
+
+      @include media-1 {
+        margin-right: 30px;
+      }
+    }
+
+    &--map {
+      @include media-4 {
+        display: none;
+      }
+    }
+
+    &--time {
+      max-width: 160px;
+      width: 100%;
+
+      @include media-2 {
+        display: none;
+      }
+    }
+  }
+
+  // .header-top__address-title
+  &__address-title {
+    position: relative;
+    padding-left: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: $blue-700;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 0;
+    }
+
+    &--gis {
+      &::before {
+        width: 18px;
+        height: 18px;
+        mask: url('../images/sprites/sprite.svg#mappin') center / cover no-repeat;
+        background-color: $blue-300;
+      }
+    }
+
+    &--clock {
+      &::before {
+        width: 18px;
+        height: 18px;
+        mask: url('../images/sprites/sprite.svg#clock') center / cover no-repeat;
+        background-color: $blue-300;
+      }
+    }
+  }
+
+  // .header-top__address-text
+  &__address-text {
+    font-size: 14px;
+  }
+
+
+  // .header-top__link
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+
+  // .header-top__social\
+  &__social {
+    margin-right: 60px;
+    margin-bottom: 10px;
+
+    @include media-1 {
+      margin-right: 20px;
+    }
+
+    @include media-2 {
+      margin-right: 30px;
+      flex-direction: column;
+    }
+
+    @include media-3 {
+      margin-right: 10px;
+    }
+
+    @include media-4 {
+      display: none;
+    }
+
+    & .social {
+      &__item {
+        @include media-2 {
+          &:not(:last-child) {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &__phone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @include media-2 {
+      display: none;
+    }
+  }
+
+  // .header-top__phone-inner
+  &__phone-inner {}
+
+  // .header-top__phone-item
+
+  &__phone-item {}
+
+  // .header-top__phone-number
+  &__phone-number {
+    font-size: 20px;
+    letter-spacing: 0.025em;
+
+    @include media-1 {
+      font-size: 18px;
+    }
+  }
+
+  // .header-top__phone-link
+  &__phone-link {
+    font-weight: 700;
+    font-size: 14px;
+    color: $blue-700;
+  }
+}
+
+.menu {
+  padding: 9px 0;
+  background-color: #d1fff0;
+  z-index: 2;
+
+
+  @include media-1 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    transform: translateY(-200%);
+    transition: transform 0.5s;
+
+  }
+
+  &--active {
+    transform: translateY(0);
+
+  }
+
+  // .menu__list
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include media-1 {
+      display: block;
+      // height: 100vh;
+      overflow-y: auto;
+    }
+  }
+
+  // .menu__item
+  &__item {
+    color: $blue-700;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+
+      @include media-1 {
+        margin-right: 0;
+      }
+    }
+
+
+  }
+
+  // .menu__link
+  &__link {
+    transition: color 0.3s;
+
+    @include media-1 {
+      display: block;
+      padding: 10px;
+    }
+
+    &:hover {
+      color: #246877;
+    }
+  }
+
+  &__cross {
+    display: none;
+
+
+    @include media-1 {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 20px;
+      height: 20px;
+      mask: url('../images/sprites/sprite.svg#cross') center / cover no-repeat;
+      background-color: $blue-900;
+    }
+
+  }
+}
+
+.header-container {
+  position: relative;
+  padding: 90px 0 134px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+
+  @include media-1 {
+    padding: 60px 0 32px;
+  }
+
+  @include media-2 {
+    padding: 30px 0 70px;
+  }
+
+  @include media-4 {
+    box-shadow: inset 0 0 0 100vh rgba(255, 255, 255, 0.7);
+    padding: 20px 0 106px;
+  }
+
+  // .header-container__title
+  &__title {
+    max-width: 927px;
+    width: 100%;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 1.2;
+
+    @include media-1 {
+      max-width: 628px;
+      font-size: 36px;
+    }
+
+    @include media-2 {
+      font-size: 32px;
+    }
+
+    @include media-4 {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+  }
+
+  // .header-container__subtitle
+  &__subtitle {
+    margin-bottom: 60px;
+    max-width: 630px;
+    width: 100%;
+    font-size: 28px;
+    color: $blue-700;
+
+    @include media-1 {
+      margin-bottom: 30px;
+      font-size: 28px;
+    }
+
+    @include media-3 {
+      margin-bottom: 30px;
+      font-size: 24px;
+    }
+
+    @include media-4 {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+  }
+
+  // .header-container__box
+  &__box {
+    @include media-1 {
+      display: flex;
+      align-items: flex-end;
+      flex-wrap: wrap;
+    }
+
+    @include media-2 {
+      display: block;
+    }
+  }
+
+  // .header-container__text
+  &__text {
+    margin-bottom: 60px;
+    max-width: 456px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 24px;
+
+    span {
+      color: $blue-500;
+    }
+
+    @include media-1 {
+      margin-bottom: 0;
+      margin-right: 46px;
+    }
+
+    @include media-2 {
+      margin-bottom: 18px;
+    }
+
+    @include media-3 {
+      font-size: 18px;
+    }
+
+    @include media-4 {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+  }
+
+  // .header-container__button
+  &__button {
+    @include media-2 {
+      display: block;
+      margin: 0 auto;
+    }
+
+  }
+}
+
+.button {}

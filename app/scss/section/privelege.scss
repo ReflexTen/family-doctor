@@ -1,0 +1,121 @@
+.privelege {
+  transform: translateY(-52px);
+  margin-bottom: -52px;
+
+  @include media-1 {
+    transform: translateY(-12px);
+    margin-bottom: -12px;
+  }
+
+  // .privelege__inner
+  &__inner {
+    display: flex;
+    justify-content: center;
+
+    @include media-4 {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  // .privelege__item
+  &__item {
+    position: relative;
+    padding: 20px 25px 36px 112px;
+    background-color: $blue-100;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+
+    @include media-1 {
+      padding: 104px 17px 35px 17px;
+      text-align: center;
+    }
+
+    @include media-2 {
+      max-width: 230px;
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    @include media-4 {
+      max-width: 330px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 30px;
+
+      @include media-2 {
+        margin-right: 19px;
+      }
+
+      @include media-4 {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 44px;
+      left: 19px;
+      width: 63px;
+      height: 63px;
+      background-color: $blue-900;
+
+      @include media-1 {
+        top: 27px;
+        left: 50%;
+        transform: translateX(-50%);
+        // right: 0;
+      }
+    }
+
+    &--calendar {
+      &::before {
+        mask: url('../images/sprites/sprite.svg#calendar') center / cover no-repeat;
+      }
+    }
+
+    &--usergear {
+      &::before {
+        mask: url('../images/sprites/sprite.svg#usergear') center / cover no-repeat;
+      }
+    }
+
+    &--fingerprint {
+      &::before {
+        mask: url('../images/sprites/sprite.svg#fingerprint') center / cover no-repeat;
+      }
+    }
+  }
+
+  // .privelege__title
+  &__title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: $blue-700;
+
+    @include media-2 {
+      margin-bottom: 60px;
+      font-size: 18px;
+    }
+
+    @include media-3 {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .privelege__text
+  &__text {
+    font-weight: 400;
+    color: black;
+
+    @include media-2 {
+      font-size: 16px;
+    }
+  }
+}
