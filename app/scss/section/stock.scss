@@ -12,7 +12,20 @@
   &__inner-wrapper {
     position: relative;
 
+    .slide-arow {
+      top: 50%;
+      transform: translateY(-50%);
+   
+      &--prew {
+        left: -10px;
+      }
+
+      &--next {
+        right: -10px;
+    }
+
   }
+}
 
 
   // .stock__inner

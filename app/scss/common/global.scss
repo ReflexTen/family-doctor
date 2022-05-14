@@ -180,13 +180,13 @@ body {
   color: $blue-700;
   text-align: center;
 
-  @include media-3 {
+  @include media-2 {
     margin-bottom: 30px;
-  }
-
-  @include media-3 {
     font-size: 20px;
   }
+
+  // @include media-3 {
+  // }
 
   @include media-4 {
     font-size: 16px;
@@ -237,14 +237,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 50%;
-  transform: translateY(-50%);
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: $blue-100;
   filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.05));
   z-index: 1;
+  transition: background-color 0.3s;
+
+  &:hover{
+    background-color: $blue-300;
+  }
 
   &::before {
     content: '';
@@ -253,7 +256,6 @@ body {
   }
 
   &--prew {
-    left: -10px;
 
     &::before {
       mask: url('../images/sprites/sprite.svg#arrow-prew') center / cover no-repeat;
@@ -263,7 +265,6 @@ body {
   }
 
   &--next {
-    right: -10px;
 
     &::before {
       mask: url('../images/sprites/sprite.svg#arrow-next') center / cover no-repeat;

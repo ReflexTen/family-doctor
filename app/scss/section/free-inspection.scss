@@ -95,12 +95,12 @@
   // .free-inspection__button
   &__button {
     display: block;
-    padding: 15px 136px;
+    // padding: 15px 136px;
     margin: 0 auto;
 
-    @include media-4 {
-      padding: 15px 74px;
-    }
+    // @include media-4 {
+    //   padding: 15px 74px;
+    // }
   }
 
   

@@ -1,0 +1,112 @@
+.assistant {
+
+  // .assistant__subtitle
+  &__subtitle {
+    max-width: 1290px;
+    margin-bottom: 45px;
+    text-align: left;
+    font-size: 36px;
+    line-height: 1.25;
+
+    @include media-2 {
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
+
+    @include media-4 {
+      font-size: 16px;
+    }
+  }
+
+  // .assistant__inner
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    // grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    gap:80px 30px;
+    text-align: center;
+
+    
+
+    @include media-2 {
+      padding: 0 54px;
+    }
+
+    @include media-4 {
+      padding: 0;
+      flex-direction: column;
+      gap:50px 30px;
+    }
+  }
+
+  // .assistant__item
+  &__item {
+    position: relative;
+    max-width: 190px;
+    width: 100%;
+    padding: 10px 5px 86px;
+    // margin-bottom: 80px;
+    background-color: $blue-100;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    @include media-4 {
+      max-width: 100%;
+    }
+
+
+    &:not(:last-child) {
+      // margin-right: 10px;
+    }
+
+    &:hover {
+      background: $blue-300;
+
+      .assistant {
+        &__item-title {
+          color: $white;
+        }
+
+        &__item-img {
+          background-color: $blue-100;
+        }
+      }
+
+    }
+  }
+
+  // .assistant__item-title
+  &__item-title {
+    font-size: 24px;
+    color: $blue-700;
+    transition: color 0.3s;
+
+    @include media-4 {
+      font-size: 20px;
+    }
+  }
+
+  // .assistant__item-img
+  &__item-img {
+    position: absolute;
+    bottom: -38px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    background-color: $blue-300;
+    transition: background-color 0.3s;
+  }
+
+  // .assistant__img
+  &__img {}
+}

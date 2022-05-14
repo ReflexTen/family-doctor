@@ -3,6 +3,7 @@ $white: #ffff;
 $dark : #474551;
 $blue-900: #09845B;
 $blue-700: #3A9B7B;
+$blue-700-0_8: rgba(#3A9B7B, 0.7);
 $blue-500: #1ED499;
 $blue-300: #58EBBB;
 $blue-100: #aef3dc;
@@ -38,10 +39,18 @@ $blue-100: #aef3dc;
 // }
 
 //-------------------------//
+
+$md0:1400;
 $md1:1200;
 $md2:992;
 $md3:768;
 $md4:576;
+
+@mixin media-0 {
+  @media (max-width: #{$md0}px) {
+    @content;
+  }
+}
 
 @mixin media-1 {
   @media (max-width: #{$md1}px) {

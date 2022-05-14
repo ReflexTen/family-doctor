@@ -200,7 +200,7 @@
 
 .menu {
   padding: 9px 0;
-  background-color: $blue-100;
+  background-color: #d1fff0;
   z-index: 2;
 
 
@@ -226,7 +226,7 @@
 
     @include media-1 {
       display: block;
-      height: 100vh;
+      // height: 100vh;
       overflow-y: auto;
     }
   }
