@@ -3,11 +3,36 @@
     background-color: $blue-100;
   }
 
-  // .header__top
-  &__top {}
+  .menu {
 
-  // .header__menu
-  &__menu {}
+    @include media-1 {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 0;
+      transform: translateY(-200%);
+      transition: transform 0.5s;
+
+    }
+
+    &--active {
+      transform: translateY(0);
+    }
+
+    &__cross {
+
+      @include media-1 {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+        mask: url('../images/sprites/sprite.svg#cross') center / cover no-repeat;
+        background-color: $blue-900;
+      }
+    }
+  }
 }
 
 .header-top {
@@ -28,9 +53,6 @@
   &__info {
     display: flex;
     align-items: center;
-    // max-width: 770px;
-    // width: 100%;
-    // justify-content: space-between;
   }
 
 
@@ -46,9 +68,6 @@
       margin-right: 30px;
     }
   }
-
-  // .header-top__address
-  &__address {}
 
   // .header-top__inner
   &__inner {
@@ -173,13 +192,6 @@
     }
   }
 
-  // .header-top__phone-inner
-  &__phone-inner {}
-
-  // .header-top__phone-item
-
-  &__phone-item {}
-
   // .header-top__phone-number
   &__phone-number {
     font-size: 20px;
@@ -195,86 +207,6 @@
     font-weight: 700;
     font-size: 14px;
     color: $blue-700;
-  }
-}
-
-.menu {
-  padding: 9px 0;
-  background-color: #d1fff0;
-  z-index: 2;
-
-
-  @include media-1 {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    top: 0;
-    transform: translateY(-200%);
-    transition: transform 0.5s;
-
-  }
-
-  &--active {
-    transform: translateY(0);
-
-  }
-
-  // .menu__list
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-
-    @include media-1 {
-      display: block;
-      // height: 100vh;
-      overflow-y: auto;
-    }
-  }
-
-  // .menu__item
-  &__item {
-    color: $blue-700;
-
-    &:not(:last-child) {
-      margin-right: 30px;
-
-      @include media-1 {
-        margin-right: 0;
-      }
-    }
-
-
-  }
-
-  // .menu__link
-  &__link {
-    transition: color 0.3s;
-
-    @include media-1 {
-      display: block;
-      padding: 10px;
-    }
-
-    &:hover {
-      color: #246877;
-    }
-  }
-
-  &__cross {
-    display: none;
-
-
-    @include media-1 {
-      display: block;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      width: 20px;
-      height: 20px;
-      mask: url('../images/sprites/sprite.svg#cross') center / cover no-repeat;
-      background-color: $blue-900;
-    }
-
   }
 }
 
@@ -394,10 +326,8 @@
   &__button {
     @include media-2 {
       display: block;
+      max-width: 200px;
       margin: 0 auto;
     }
-
   }
 }
-
-.button {}

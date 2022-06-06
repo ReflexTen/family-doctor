@@ -1,7 +1,5 @@
 .documentation {
-
-  // .documentation__title
-  &__title {}
+  padding-bottom: 60px;
 
   // .documentation__subtitle
   &__subtitle {
@@ -33,56 +31,21 @@
     }
   }
 
-  // .documentation__btn-prew
-  &__btn-prew {}
-
-  // .documentation__btn-next
-  &__btn-next {}
-
   // .documentation__inner
   &__inner {
     .slick-list {
-      // display: flex;
       margin-right: -10px;
       margin-left: -10px;
-
-      // @include media-3 {
-      //   margin-right: -10px;
-      //   margin-left: -10px;
-      // }
-
-      // @include media-4 {
-      //   margin-right: 0;
-      //   margin-left: 0;
-      // }
-
-    }
-
-    .slick-track {
-      // display: flex;
     }
 
     .slick-slide {
       margin: 0;
-
-      // @include media-3 {
-      //   margin: 0 10px;
-      // }
-
-      // @include media-4 {
-      //   @include media-3 {
-      //     margin: 0;
-      //   }
-      // }
 
       &>div {
         height: 100%;
       }
     }
   }
-
-  // .documentation__item
-  &__item {}
 
   // .documentation__img
   &__img {

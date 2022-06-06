@@ -1,0 +1,169 @@
+.doc {
+  padding: 90px 0 230px;
+  background-color: $blue-100;
+
+  @include media-3 {
+    padding: 50px 0 130px;
+  }
+
+  @include media-4 {
+    padding: 50px 0 80px;
+  }
+
+  // .doc__subtitle
+  &__subtitle {
+    margin-bottom: 60px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.2;
+    color: $dark;
+
+    @include media-3 {
+      font-size: 30px;
+    }
+
+    @include media-4 {
+      font-size: 24px;
+    }
+
+    span {
+      font-weight: 700;
+    }
+
+  }
+
+  // .doc__subtitle-name
+  &__subtitle-name {
+    color: $blue-900;
+  }
+
+  // .doc__wrapper
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    @include media-3 {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  // .doc__card
+  &__card {
+    position: relative;
+    max-width: 630px;
+    max-height: 690px;
+    width: 100%;
+    padding: 40px 10px 0 30px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+
+    @include media-1 {
+      max-width: 422px;
+      padding: 20px 10px 0 15px;
+    }
+
+    @include media-3 {
+      max-width: 354px;
+      max-height: 728px;
+    }
+
+    @include media-3 {
+      max-width: 530px;
+      margin-right: 0;
+    }
+  }
+
+  // .doc__info
+  &__info {
+    padding-top: 30px;
+
+    @include media-1 {
+      max-width: 488px;
+    }
+
+    @include media-3 {
+      max-width: 100%;
+    }
+  }
+
+  // .doc__text
+  &__text {
+    max-width: 630px;
+    width: 100%;
+    margin-bottom: 82px;
+    font-weight: 400;
+    font-size: 28px;
+
+    span {
+      display: block;
+      color: $blue-900;
+    }
+
+    @include media-2 {
+      margin-bottom: 30px;
+      font-size: 24px;
+    }
+
+    @include media-3 {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    @include media-4 {
+      font-size: 18px;
+    }
+  }
+
+  // .doc__social-wrapper
+  &__social-wrapper {
+    margin-bottom: 30px;
+  }
+
+  // .doc__registration
+  &__registration {
+    background-color: $white;
+    max-width: 100%;
+  }
+
+  // .doc__buttons
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 28px;
+
+    @include media-3 {
+      flex-direction: column;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+
+  // .doc__button
+  &__button {
+
+    @include media-3 {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  // .doc__close
+  &__close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 10;
+  }
+
+  .record__subtitle {
+    @include media-2 {
+      font-size: 20px;
+    }
+  }
+}

@@ -1,16 +1,3 @@
-.services {
-  padding-bottom: 50px;
-
-  // .services__title
-  &__title {}
-
-  // .services__subtitle
-  &__subtitle {}
-
-  // .services__banners
-  &__banners {}
-}
-
 .banners {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -31,13 +18,10 @@
     background-color: $blue-100;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    z-index: 1;
 
     @include media-3 {
       min-height: 560px
-    }
-
-    @include media-4 {
-      // min-height: 740px
     }
   }
 
@@ -151,6 +135,16 @@
 
   // .banners__button
   &__button {
+    max-width: 200px;
+
+    &--video {
+      @include media-1 {
+        display: block;
+        margin: 0 auto 20px;
+        padding: 7px 39px;
+      }
+    }
+
     @include media-4 {
       display: block;
       margin: 0 auto;
@@ -195,14 +189,15 @@
     @include media-3 {
       padding: 30px 0 100px;
     }
-
   }
 
   // .technology__info
   &__info {
-    // margin-right: 10px;
+    margin-right: 10px;
 
-
+    @include media-1 {
+      margin-right: 0;
+    }
   }
 
   // .technology__title
@@ -229,11 +224,8 @@
 
   &__video {
     @include media-1 {
-      // display: block;
       max-width: 550px;
-      // width: 100%;
       margin: 0 auto 30px;
-      // margin-left: 50px;
     }
   }
 
@@ -285,8 +277,7 @@
       transition: transform 0.3s;
 
       @include media-4 {
-        transform: scale(0.5) // width: 50px;
-          // height: 50px;
+        transform: scale(0.5)
       }
     }
 
@@ -305,13 +296,9 @@
     @include media-1 {
       position: absolute;
       bottom: 77px;
-      // display: flex;
-      // align-self: end;
-
       left: 50%;
       transform: translateX(-50%);
       width: 190px;
-      // padding: 0;
       padding: 7px 0;
     }
 
@@ -367,10 +354,6 @@
       padding: 30px 108px 13px;
     }
 
-    // @include media-3 {
-    //   padding: 60px 30px 30px;
-    // }
-
     @include media-2 {
       padding: 30px 10px 30px;
     }
@@ -416,8 +399,6 @@
 
     @include media-4 {
       padding: 10px 10px 10px 10px;
-      // padding-left: 10px;
-      // height: 110px;
       min-height: 100px;
       height: 100%;
     }
@@ -429,7 +410,6 @@
       @include media-1 {
         margin: 0 auto 10px;
       }
-
     }
 
     &:nth-child(3) {
@@ -464,12 +444,8 @@
     color: $blue-900;
 
     @include media-4 {
-
       max-width: 50px;
       height: 50px;
-
-
-      // min-width: 43px;
       margin-right: 10px;
       padding: 0;
       padding-right: 5px;
