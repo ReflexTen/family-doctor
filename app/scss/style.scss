@@ -8,11 +8,13 @@
 //Подключение компонентов
 @import 'components/social';
 @import 'components/burger';
+@import 'components/popup';
+@import 'components/doctor';
 
 //Подключение секций//************************
 
 //header
-@import 'header';  
+@import 'header';
 
 //main
 @import 'section/privelege';
@@ -31,3 +33,7 @@
 
 //footer
 @import 'footer';
+
+//directions
+@import 'directions/specialists';
+@import 'directions/doc';

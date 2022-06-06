@@ -12,13 +12,15 @@
 
 <body>
 
-<header class="header">
+<div class="wrapper">
+
+  <header id="header" class="header">
   <div class="container">
     <div class="header__top header-top">
       <div class="header-top__info">
 
-        <div class="header-top__logo-box logo-box" href="#">
-          <a class="logo-box__logo" href="#body">
+        <div class="header-top__logo-box logo-box">
+          <a class="logo-box__logo" href="#header">
             <img class="logo-box__img" src="images/logo/logo.svg" alt="логотип клиники">
           </a>
 
@@ -86,8 +88,6 @@
           <span class="burger__line"></span>
           <span class="sr-only">Мобильное меню</span>
         </button>
-
-
       </div>
     </div>
   </div>
@@ -96,49 +96,49 @@
     <div class="container">
       <ul class="menu__list">
         <li class="menu__item">
-          <a class="menu__link" href="#">
+          <a class="menu__link" href="#header">
             Главная
           </a>
         </li>
 
         <li class="menu__item">
-          <a class="menu__link" href="#">
+          <a class="menu__link" href="#stock">
             Акции
           </a>
         </li>
 
         <li class="menu__item">
-          <a class="menu__link" href="#">
+          <a class="menu__link" href="#services">
             Услуги
           </a>
         </li>
 
         <li class="menu__item">
-          <a class="menu__link" href="#">
+          <a class="menu__link" href="#doctors">
             Врачи
           </a>
         </li>
 
         <li class="menu__item">
-          <a class="menu__link" href="#">
+          <a class="menu__link" href="#reviews">
             Отзывы
           </a>
         </li>
 
         <li class="menu__item">
-          <a class="menu__link" href="#">
+          <a class="menu__link" href="#documentation">
             Лицензии
           </a>
         </li>
 
         <li class="menu__item">
-          <a class="menu__link" href="#">
+          <a class="menu__link" href="#about">
             О клинике
           </a>
         </li>
 
         <li class="menu__item">
-          <a class="menu__link" href="#">
+          <a class="menu__link" href="#contacts">
             Контакты
           </a>
         </li>
@@ -160,20 +160,19 @@
 
       <div class="header-container__box">
         <p class="header-container__text">
-          Запишитесь на <span>бесплатную</span>  первичную консультацию - диагностику зубов
+          Запишитесь на <span>бесплатную</span> первичную консультацию - диагностику зубов
         </p>
 
-        <button class="header-container__button button">
+        <a class="header-container__button button" href="#registration">
           Записаться
-        </button>
+        </a>
       </div>
-
     </div>
   </div>
 </header>
 
-<main class="main">
-  <section class="privelege">
+  <main class="main">
+    <section class="privelege">
   <h2 class="sr-only">
     Привелегии
   </h2>
@@ -213,11 +212,67 @@
   </div>
 </section>
 
-</main>
+    <section class="free-inspection section">
+  <div class="container">
+    <h2 class="free-inspection__title title">
+      Бесплатная консультация врача
+    </h2>
 
+    <h3 class="free-inspection__subtitle subtitle">
+      На бесплатной консультации врач клиники проведет диагностику всех зубов:
+    </h3>
 
+    <ul class="free-inspection__inner">
+      <li class="free-inspection__item">
+        <div class="free-inspection__item-wrapper">
+          <img class="free-inspection__item-img" src="images/free-inspection/free-inspection-one.jpg"
+            alt="Фото полного осмотра" width="410" height="280">
+        </div>
 
-<section class="stock section">
+        <h4 class="free-inspection__item-title">
+          Полный осмотр и диагностика полости рта
+        </h4>
+        <p class="free-inspection__item-text">
+          При необходимости сделаем дополнительный снимок зубов, у нас в клинике
+        </p>
+      </li>
+
+      <li class="free-inspection__item">
+        <div class="free-inspection__item-wrapper">
+          <img class="free-inspection__item-img" src="images/free-inspection/free-inspection-two.jpg"
+            alt="Фото полного осмотра" width="410" height="280">
+        </div>
+
+        <h4 class="free-inspection__item-title">
+          Составит 2-3 плана лечения на выбор
+        </h4>
+        <p class="free-inspection__item-text">
+          Вы сможете выбрать подходящий план лечения, исходя из бюджета
+        </p>
+      </li>
+
+      <li class="free-inspection__item">
+        <div class="free-inspection__item-wrapper">
+          <img class="free-inspection__item-img" src="images/free-inspection/free-inspection-three.jpg"
+            alt="Фото полного осмотра" width="410" height="280">
+        </div>
+
+        <h4 class="free-inspection__item-title">
+          При необходимости проведем проф. гигиену
+        </h4>
+        <p class="free-inspection__item-text">
+          Чистка зубов в 4 этапа
+        </p>
+      </li>
+    </ul>
+
+    <a class="free-inspection__button button" href="#registration">
+      Записаться
+    </a>
+  </div>
+</section>
+
+    <section id="stock" class="stock section">
   <div class="container">
     <h2 class="stock__title title">
       Акции
@@ -244,37 +299,41 @@
       <ul class="stock__inner">
         <li class="stock__item">
           <img class="stock__item-img" src="images/stock/slide-1.png" alt="">
-          <button class="stock__button button button--transparent" type="button">
+
+          <a class="popup-link stock__button button button--transparent" href="#popup">
             Участвовать
-          </button>
+          </a>
         </li>
 
         <li class="stock__item">
           <img class="stock__item-img" src="images/stock/slide-2.png" alt="">
-          <button class="stock__button button button--transparent" type="button">
+
+          <a class="popup-link stock__button button button--transparent" href="#popup">
             Участвовать
-          </button>
+          </a>
         </li>
 
         <li class="stock__item">
           <img class="stock__item-img" src="images/stock/slide-3.png" alt="">
-          <button class="stock__button button button--transparent" type="button">
+
+          <a class="popup-link stock__button button button--transparent" href="#popup">
             Участвовать
-          </button>
+          </a>
         </li>
 
         <li class="stock__item">
           <img class="stock__item-img" src="images/stock/slide-2.png" alt="">
-          <button class="stock__button button button--transparent" type="button">
+
+          <a class="popup-link stock__button button button--transparent" href="#popup">
             Участвовать
-          </button>
+          </a>
         </li>
       </ul>
     </div>
   </div>
 </section>
 
- <section class="services section">
+    <section id="services" class="services section">
   <div class="container">
     <h2 class="services__title title">
       Услуги
@@ -302,7 +361,6 @@
             <li class="banners__services-item">
               Удаление зубов любой сложности
             </li>
-
           </ul>
         </div>
 
@@ -311,7 +369,7 @@
             <ul class="banners__social social">
               <li class="social__item">
                 <a class="social__link" href="#">
-                  <img class="social__img" src="images/social/telegram.svg" alt="сылка на тлеграм">
+                  <img class="social__img" src="images/social/telegram.svg" alt="сылка на телеграм">
                 </a>
               </li>
 
@@ -328,16 +386,15 @@
           </div>
 
           <div class="banners__buttons">
-            <button class="banners__button button button--transparent" type="button">
+            <a class="banners__button button button--transparent" href="#registration">
               Записаться
-            </button>
+            </a>
 
-            <button class="banners__button button button--transparent-blue" type="button">
+            <a class="banners__button button button--transparent-blue popup-link" href="#popup_2">
               Узнать цены
-            </button>
+            </a>
           </div>
         </div>
-
       </li>
 
       <li class="banners__item">
@@ -391,16 +448,15 @@
           </div>
 
           <div class="banners__buttons">
-            <button class="banners__button button button--transparent" type="button">
+            <a class="banners__button button button--transparent" href="#registration">
               Записаться
-            </button>
+            </a>
 
-            <button class="banners__button button button--transparent-blue" type="button">
+            <a class="banners__button button button--transparent-blue popup-link" href="#popup_2">
               Узнать цены
-            </button>
+            </a>
           </div>
         </div>
-
       </li>
 
       <li class="banners__item">
@@ -432,7 +488,6 @@
             <li class="banners__services-item">
               Установка виниров
             </li>
-
           </ul>
         </div>
 
@@ -458,16 +513,15 @@
           </div>
 
           <div class="banners__buttons">
-            <button class="banners__button button button--transparent" type="button">
+            <a class="banners__button button button--transparent" href="#registration">
               Записаться
-            </button>
+            </a>
 
-            <button class="banners__button button button--transparent-blue" type="button">
+            <a class="banners__button button button--transparent-blue popup-link" href="#popup_2">
               Узнать цены
-            </button>
+            </a>
           </div>
         </div>
-
       </li>
 
       <li class="banners__item">
@@ -521,16 +575,15 @@
           </div>
 
           <div class="banners__buttons">
-            <button class="banners__button button button--transparent" type="button">
+            <a class="banners__button button button--transparent" href="#registration">
               Записаться
-            </button>
+            </a>
 
-            <button class="banners__button button button--transparent-blue" type="button">
+            <a class="banners__button button button--transparent-blue popup-link" href="#popup_2">
               Узнать цены
-            </button>
+            </a>
           </div>
         </div>
-
       </li>
 
       <li class="banners__item">
@@ -558,7 +611,6 @@
             <li class="banners__services-item">
               Полная диагностика и лечение взрослых и детей
             </li>
-
           </ul>
         </div>
 
@@ -584,16 +636,15 @@
           </div>
 
           <div class="banners__buttons">
-            <button class="banners__button button button--transparent" type="button">
+            <a class="banners__button button button--transparent" href="#registration">
               Записаться
-            </button>
+            </a>
 
-            <button class="banners__button button button--transparent-blue" type="button">
+            <a class="banners__button button button--transparent-blue popup-link" href="#popup_2">
               Узнать цены
-            </button>
+            </a>
           </div>
         </div>
-
       </li>
 
       <li class="banners__item">
@@ -613,7 +664,6 @@
             <li class="banners__services-item">
               Система Opalescence Boost
             </li>
-
           </ul>
         </div>
 
@@ -639,21 +689,19 @@
           </div>
 
           <div class="banners__buttons">
-            <button class="banners__button button button--transparent" type="button">
+            <a class="banners__button button button--transparent" href="#registration">
               Записаться
-            </button>
+            </a>
 
-            <button class="banners__button button button--transparent-blue" type="button">
+            <a class="banners__button button button--transparent-blue popup-link" href="#popup_2">
               Узнать цены
-            </button>
+            </a>
           </div>
         </div>
-
       </li>
     </ul>
 
     <div class="services__technology technology">
-
       <div class="technology__top">
         <div class="technology__info">
           <h3 class="technology__title">
@@ -666,15 +714,15 @@
               Посмотрите видео о технологии
             </p>
 
-            <a class="technology__video-link" data-fancybox href="#"
+            <a class="technology__video-link popup-link" href="#popup_3"
               style="background-image: url('images/services/technology-bg.jpg')">
               <span class="sr-only">видео о технологии</span>
             </a>
           </div>
 
-          <button class="technology__button button button--transparent" type="button">
+          <a class="banners__button banners__button--video button button--transparent-blue popup-link" href="#popup_2">
             Узнать цены
-          </button>
+          </a>
         </div>
 
         <ul class="technology__top-inner">
@@ -717,7 +765,6 @@
       </div>
 
       <div class="technology__bottom" style="background-image: url('images/services/bottom-bg.jpg')">
-
         <ul class="technology__step-inner">
           <li class="technology__step-item">
             <span class="technology__step-num">1</span>
@@ -765,20 +812,20 @@
         </div>
 
         <div class="technology__buttons">
-          <button class="technology__bottom-button button button--transparent" type="button">
+          <a class="banners__button button button--transparent" href="#registration">
             Записаться
-          </button>
+          </a>
 
-          <button class="technology__bottom-button button" type="button">
+          <a class="technology__bottom-button button" href="#assistant">
             Выбрать врача
-          </button>
+          </a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="doctors section">
+    <section id="doctors" class="doctors section">
   <div class="container">
     <h2 class="doctors__title title">
       Врачи
@@ -789,9 +836,7 @@
       запишитесь на консультацию.
     </h3>
 
-
     <div class="doctors__sliders">
-
       <div class="doctors__min-slider-wrapper">
         <ul class="doctors__min-slider min-slider">
           <li class="min-slider__item">
@@ -868,8 +913,6 @@
         </ul>
       </div>
 
-
-
       <div class="doctors__big-slider-wrapper">
         <button class="big-slider-btn__prew slide-arow slide-arow--prew" type="button">
           <span class="sr-only">
@@ -886,219 +929,226 @@
         <div class="box-shadow-wrapper">
           <ul class="doctors__big-slider big-slider">
             <li class="big-slider__item">
-              <img class="big-slider__img" src="images/doctors/big-img-1.png" alt="фото врача">
+              <div class="doctor">
+                <img class="doctor__img" src="images/doctors/big-img-1.png" alt="фото врача">
 
-              <div class="big-slider__name">
-                Макаров Михаил Демьянович
-              </div>
+                <div class="doctor__name">
+                  Макаров Михаил Демьянович
+                </div>
 
-              <p class="big-slider__profession">
-                Врач-стоматолог <span>Ведущий специалист</span>
-              </p>
-
-              <div class="big-slider__review">
-                <p class="big-slider__review-title">
-                  Опыт работы более 25 лет
+                <p class="doctor__profession">
+                  Врач-стоматолог <span>Ведущий специалист</span>
                 </p>
 
-                <p class="big-slider__review-sertificats">
-                  Действующие сертификаты:
-                </p>
+                <div class="doctor__review">
+                  <p class="doctor__review-title">
+                    Опыт работы более 25 лет
+                  </p>
 
-                <p class="big-slider__review-text">
-                  стоматология ортопедическая; стоматология хирургическая
-                </p>
+                  <p class="doctor__review-sertificats">
+                    Действующие сертификаты:
+                  </p>
 
-                <p class="big-slider__review-direction">
-                  Все виды высококачественного протезирования: <span>съемные несъемные, безметалловые конструкции,
-                    цирконий,
-                    протезирование на имплантах, драгметаллах, вкладки,
-                    виниры, гнатология и хирургия</span>
-                </p>
-              </div>
-            </li>
+                  <p class="doctor__review-text">
+                    стоматология ортопедическая; стоматология хирургическая
+                  </p>
 
-            <li class="big-slider__item">
-              <img class="big-slider__img" src="images/doctors/big-img-2.png" alt="фото врача">
-
-              <div class="big-slider__name">
-                Блинов Егор Егорович
-              </div>
-
-              <p class="big-slider__profession">
-                Врач-стоматолог
-              </p>
-
-              <div class="big-slider__review">
-                <p class="big-slider__review-title">
-                  Опыт работы более 5 лет
-                </p>
-
-                <p class="big-slider__review-sertificats">
-                  Действующие сертификаты:
-                </p>
-
-                <p class="big-slider__review-text">
-                  стоматология общей практики; стоматология хирургическая
-                </p>
-
-                <p class="big-slider__review-direction">
-                  Направленность:
-                </p>
-
-                <p class="big-slider__review-text">
-                  имплантация, пародонтология, удаление зубов любой сложности
-                </p>
-
+                  <p class="doctor__review-direction">
+                    Все виды высококачественного протезирования: <span>съемные несъемные, безметалловые конструкции,
+                      цирконий,
+                      протезирование на имплантах, драгметаллах, вкладки,
+                      виниры, гнатология и хирургия</span>
+                  </p>
+                </div>
               </div>
             </li>
 
             <li class="big-slider__item">
-              <img class="big-slider__img" src="images/doctors/big-img-3.png" alt="фото врача">
+              <div class="doctor">
+                <img class="doctor__img" src="images/doctors/big-img-2.png" alt="фото врача">
 
-              <div class="big-slider__name">
-                Кузьмин Артём Кириллович
-              </div>
+                <div class="doctor__name">
+                  Блинов Егор Егорович
+                </div>
 
-              <p class="big-slider__profession">
-                Врач-стоматолог <span>Ведущий специалист</span>
-              </p>
-
-              <div class="big-slider__review">
-                <p class="big-slider__review-title">
-                  Опыт работы более 5 лет
+                <p class="doctor__profession">
+                  Врач-стоматолог
                 </p>
 
-                <p class="big-slider__review-sertificats">
-                  Действующие сертификаты:
-                </p>
+                <div class="doctor__review">
+                  <p class="doctor__review-title">
+                    Опыт работы более 5 лет
+                  </p>
 
-                <p class="big-slider__review-text">
-                  стоматология общей практики; стоматология хирургическая
-                </p>
+                  <p class="doctor__review-sertificats">
+                    Действующие сертификаты:
+                  </p>
 
-                <p class="big-slider__review-direction">
-                  Направленность:
-                </p>
+                  <p class="doctor__review-text">
+                    стоматология общей практики; стоматология хирургическая
+                  </p>
 
-                <p class="big-slider__review-text">
-                  протезирование зубов, хирургическое удаление, терапевтическое лечение и отбеливание
-                </p>
+                  <p class="doctor__review-direction">
+                    Направленность:
+                  </p>
 
-              </div>
-            </li>
-
-            <li class="big-slider__item">
-              <img class="big-slider__img" src="images/doctors/big-img-4.png" alt="фото врача">
-
-              <div class="big-slider__name">
-                Соловьева Аделина Фёдоровна
-              </div>
-
-              <p class="big-slider__profession">
-                Врач-стоматолог <span>Ведущий специалист</span>
-              </p>
-
-              <div class="big-slider__review">
-                <p class="big-slider__review-title">
-                  Опыт работы более 10 лет
-                </p>
-
-                <p class="big-slider__review-sertificats">
-                  Действующие сертификаты:
-                </p>
-
-                <p class="big-slider__review-text">
-                  стоматология общей практики; стоматология терапевтическая; стоматология ортодонтическая
-                </p>
-
-                <p class="big-slider__review-direction">
-                  Направленность:
-                </p>
-
-                <p class="big-slider__review-text">
-                  терапевтическое лечение, эстетическая реставрация зубов и исправление прикуса любой сложности
-                </p>
-
+                  <p class="doctor__review-text">
+                    имплантация, пародонтология, удаление зубов любой сложности
+                  </p>
+                </div>
               </div>
             </li>
 
             <li class="big-slider__item">
-              <img class="big-slider__img" src="images/doctors/big-img-5.png" alt="фото врача">
+              <div class="doctor">
+                <img class="doctor__img" src="images/doctors/big-img-3.png" alt="фото врача">
 
-              <div class="big-slider__name">
-                Дмитриева Анна Александровна
-              </div>
+                <div class="doctor__name">
+                  Кузьмин Артём Кириллович
+                </div>
 
-              <p class="big-slider__profession">
-                Врач-стоматолог <span>Ведущий специалист</span>
-              </p>
-
-              <div class="big-slider__review">
-                <p class="big-slider__review-title">
-                  Опыт работы более 20 лет
+                <p class="doctor__profession">
+                  Врач-стоматолог <span>Ведущий специалист</span>
                 </p>
 
-                <p class="big-slider__review-sertificats">
-                  Действующие сертификаты:
-                </p>
+                <div class="doctor__review">
+                  <p class="doctor__review-title">
+                    Опыт работы более 5 лет
+                  </p>
 
-                <p class="big-slider__review-text">
-                  стоматология общей практики; стоматология ортопедическая
-                </p>
+                  <p class="doctor__review-sertificats">
+                    Действующие сертификаты:
+                  </p>
 
-                <p class="big-slider__review-direction">
-                  Направленность:
-                </p>
+                  <p class="doctor__review-text">
+                    стоматология общей практики; стоматология хирургическая
+                  </p>
 
-                <p class="big-slider__review-text">
-                  терапевтическое лечение, все виды протезирования, хирургическое удаление зубов
-                </p>
+                  <p class="doctor__review-direction">
+                    Направленность:
+                  </p>
 
+                  <p class="doctor__review-text">
+                    протезирование зубов, хирургическое удаление, терапевтическое лечение и отбеливание
+                  </p>
+                </div>
               </div>
             </li>
 
             <li class="big-slider__item">
-              <img class="big-slider__img" src="images/doctors/big-img-6.png" alt="фото врача">
+              <div class="doctor">
+                <img class="doctor__img" src="images/doctors/big-img-4.png" alt="фото врача">
 
-              <div class="big-slider__name">
-                Попова Дарья Даниловна
+                <div class="doctor__name">
+                  Соловьева Аделина Фёдоровна
+                </div>
+
+                <p class="doctor__profession">
+                  Врач-стоматолог <span>Ведущий специалист</span>
+                </p>
+
+                <div class="doctor__review">
+                  <p class="doctor__review-title">
+                    Опыт работы более 10 лет
+                  </p>
+
+                  <p class="doctor__review-sertificats">
+                    Действующие сертификаты:
+                  </p>
+
+                  <p class="doctor__review-text">
+                    стоматология общей практики; стоматология терапевтическая; стоматология ортодонтическая
+                  </p>
+
+                  <p class="doctor__review-direction">
+                    Направленность:
+                  </p>
+
+                  <p class="doctor__review-text">
+                    терапевтическое лечение, эстетическая реставрация зубов и исправление прикуса любой сложности
+                  </p>
+                </div>
               </div>
+            </li>
 
-              <p class="big-slider__profession">
-                Врач-стоматолог <span>Ведущий специалист</span>
-              </p>
+            <li class="big-slider__item">
+              <div class="doctor">
+                <img class="doctor__img" src="images/doctors/big-img-5.png" alt="фото врача">
 
-              <div class="big-slider__review">
-                <p class="big-slider__review-title">
-                  Опыт работы более 5 лет
+                <div class="doctor__name">
+                  Дмитриева Анна Александровна
+                </div>
+
+                <p class="doctor__profession">
+                  Врач-стоматолог <span>Ведущий специалист</span>
                 </p>
 
-                <p class="big-slider__review-sertificats">
-                  Действующие сертификаты:
+                <div class="doctor__review">
+                  <p class="doctor__review-title">
+                    Опыт работы более 20 лет
+                  </p>
+
+                  <p class="doctor__review-sertificats">
+                    Действующие сертификаты:
+                  </p>
+
+                  <p class="doctor__review-text">
+                    стоматология общей практики; стоматология ортопедическая
+                  </p>
+
+                  <p class="doctor__review-direction">
+                    Направленность:
+                  </p>
+
+                  <p class="doctor__review-text">
+                    терапевтическое лечение, все виды протезирования, хирургическое удаление зубов
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="big-slider__item">
+              <div class="doctor">
+                <img class="doctor__img" src="images/doctors/big-img-6.png" alt="фото врача">
+
+                <div class="doctor__name">
+                  Попова Дарья Даниловна
+                </div>
+
+                <p class="doctor__profession">
+                  Врач-стоматолог <span>Ведущий специалист</span>
                 </p>
 
-                <p class="big-slider__review-text">
-                  стоматология общей практики; стоматология хирургическая
-                </p>
+                <div class="doctor__review">
+                  <p class="doctor__review-title">
+                    Опыт работы более 5 лет
+                  </p>
 
-                <p class="big-slider__review-direction">
-                  Направленность:
-                </p>
+                  <p class="doctor__review-sertificats">
+                    Действующие сертификаты:
+                  </p>
 
-                <p class="big-slider__review-text">
-                  терапевтическое лечение, эстетическая реставрация, хирургическое удаление зубов , профессиональная
-                  гигиена и отбеливание
-                </p>
+                  <p class="doctor__review-text">
+                    стоматология общей практики; стоматология хирургическая
+                  </p>
 
+                  <p class="doctor__review-direction">
+                    Направленность:
+                  </p>
+
+                  <p class="doctor__review-text">
+                    терапевтическое лечение, эстетическая реставрация, хирургическое удаление зубов , профессиональная
+                    гигиена и отбеливание
+                  </p>
+                </div>
               </div>
             </li>
           </ul>
         </div>
 
-        <button class="doctors__button button button--transparent" type="button">
+        <a class="doctors__button button button--transparent" href="#registration">
           Записаться
-        </button>
+        </a>
 
         <div class="doctors__social-wrapper social-wrapper">
           <ul class="doctors__social social">
@@ -1120,15 +1170,11 @@
           </p>
         </div>
       </div>
-
-
     </div>
-
-
   </div>
 </section>
 
-<section class="assistant section">
+    <section id="assistant" class="assistant section">
   <div class="container">
 
     <h3 class="assistant__subtitle subtitle">
@@ -1136,11 +1182,9 @@
       специалиста
     </h3>
 
-
     <ul class="assistant__inner">
-
       <li class="assistant__item">
-        <a class="assistant__link" href="#">
+        <a class="assistant__link" href="assistant_html/surgery.html">
           <h5 class="assistant__item-title">
             Хирургия
           </h5>
@@ -1153,7 +1197,7 @@
       </li>
 
       <li class="assistant__item">
-        <a class="assistant__link" href="#">
+        <a class="assistant__link" href="assistant_html/therapy.html">
           <h5 class="assistant__item-title">
             Терапия
           </h5>
@@ -1166,7 +1210,7 @@
       </li>
 
       <li class="assistant__item">
-        <a class="assistant__link" href="#">
+        <a class="assistant__link" href="assistant_html/orthopedics.html">
           <h5 class="assistant__item-title">
             Ортопедия
           </h5>
@@ -1179,7 +1223,7 @@
       </li>
 
       <li class="assistant__item">
-        <a class="assistant__link" href="#">
+        <a class="assistant__link" href="assistant_html/implantation.html">
           <h5 class="assistant__item-title">
             Имплантация
           </h5>
@@ -1192,7 +1236,7 @@
       </li>
 
       <li class="assistant__item">
-        <a class="assistant__link" href="#">
+        <a class="assistant__link" href="assistant_html/orthodontics.html">
           <h5 class="assistant__item-title">
             Ортодонтия
           </h5>
@@ -1205,7 +1249,7 @@
       </li>
 
       <li class="assistant__item">
-        <a class="assistant__link" href="#">
+        <a class="assistant__link" href="assistant_html/whitening.html">
           <h5 class="assistant__item-title">
             Отбеливание
           </h5>
@@ -1217,12 +1261,10 @@
         </a>
       </li>
     </ul>
-
-
   </div>
 </section>
 
-<section class="reviews section">
+    <section id="reviews" class="reviews section">
   <div class="container">
     <h2 class="reviews__title title">
       Отзывы
@@ -1247,11 +1289,10 @@
       </button>
 
       <ul class="reviews__inner">
-
         <li class="reviews__item">
           <div class="reviews__box">
             <div class="reviews__img-wrapper">
-              <img class="reviews__img" src="images/reviews/people-1.jpg" alt="фото пациента" >
+              <img class="reviews__img" src="images/reviews/people-1.jpg" alt="фото пациента">
             </div>
 
             <div class="reviews__item-content">
@@ -1270,7 +1311,6 @@
                 12.02.2020
               </p>
             </div>
-
           </div>
         </li>
 
@@ -1320,7 +1360,6 @@
                 12.02.2020
               </p>
             </div>
-
           </div>
         </li>
 
@@ -1347,7 +1386,6 @@
             </div>
           </div>
         </li>
-
       </ul>
     </div>
 
@@ -1361,11 +1399,9 @@
       </a>
     </div>
   </div>
-
-
 </section>
 
-<section class="documentation section">
+    <section id="documentation" class="documentation section">
   <div class="container">
     <h2 class="documentation__title title">
       Лицензии и награды
@@ -1374,7 +1410,6 @@
     <h3 class="documentation__subtitle subtitle">
       Деятельность клиники сертифицирована, мы имеем все необходимые лицензии и разрешающие документы.
     </h3>
-
 
     <div class="documentation__slider">
       <button class="documentation__btn-prew slide-arow slide-arow--prew" type="button">
@@ -1390,7 +1425,6 @@
       </button>
 
       <ul class="documentation__inner">
-
         <li class="documentation__item">
               <img class="documentation__img" src="images/documentation/documentation-1.png" alt="фото документа">
         </li>
@@ -1410,15 +1444,12 @@
         <li class="documentation__item">
               <img class="documentation__img" src="images/documentation/documentation-1.png" alt="фото документа">
         </li>
-
       </ul>
-
     </div>
-
   </div>
 </section>
 
-<section class="about section">
+    <section id="about" class="about section">
   <div class="container">
     <h2 class="about__title title">
       О клинике
@@ -1429,7 +1460,6 @@
     </h3>
 
     <div class="about__content">
-
       <div class="about__info">
         <p class="about__info-text">
           Философия клиники Ваша здоровая улыбка – наша работа. В стенах нашей стоматологической клиники Вы всегда
@@ -1457,8 +1487,6 @@
       <div class="about__img-box">
         <img class="about__info-img" src="images/about/info-img.jpg" alt="фото кабинета Стоматологии">
       </div>
-
-
     </div>
 
     <div class="about__slider">
@@ -1475,7 +1503,6 @@
       </button>
 
       <ul class="about__inner">
-
         <li class="about__item">
           <div class="about__box">
             <img class="about__img" src="images/about/img-1.jpg" alt="фото отзывы клиентов">
@@ -1505,45 +1532,50 @@
             <img class="about__img" src="images/about/img-3.jpg" alt="фото отзывы клиентов">
           </div>
         </li>
-
       </ul>
     </div>
   </div>
 </section>
 
-<section class="registration section">
-
+    <section id="registration" class="registration section">
   <div class="registration__wrapper" style="background-image: url('images/bg/registration-bg.jpg')">
     <div class="container">
-      <div class="registration__content">
-        <div class="registration__title">
+      <div class="registration__content record">
+        <div class="record__title">
           Запишитесь на бесплатную первичную консультацию и диагностику зубов
         </div>
 
-        <div class="registration__subtitle">
+        <div class="record__subtitle">
           В ходе консультации вы получите 2-3 плана качественного лечения под ваш бюджет
         </div>
 
-        <form class="registration__form" action="">
+        <form class="record__form" action="">
           <label class="sr-only" for="name">Имя</label>
-          <input class="registration__input" id="name" name="name" type="text" placeholder="Имя" required>
+          <input class="record__input" id="name" name="name" type="text" placeholder="Имя" required>
 
           <label class="sr-only" for="phone">Телефон</label>
-          <input class="registration__input" id="phone" name="phone" type="tel" placeholder="Телефон" required>
+          <input class="record__input" id="phone" name="phone" type="tel" placeholder="Телефон" required>
 
-          <button class="registration__button button" type="button">
+          <button class="record__button button" type="button">
             Записаться
           </button>
         </form>
       </div>
     </div>
   </div>
-
 </section>
 
-<section class="contacts section">
+    <section id="contacts" class="contacts section">
 
-  <div class="contacts__wrapper" style="background-image: url('images/bg/contacts-bg.jpg')">
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30720.897955263943!2d38.764345095975976!3d55.089733259079814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6232c8c875860e4a!2zNTXCsDA1JzM4LjEiTiAzOMKwNDYnMTMuNCJF!5e0!3m2!1sru!2sru!4v1652530114773!5m2!1sru!2sru"
+      max-width="1920" width="100%" height="540" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <div class="contacts__wrapper">
     <div class="container">
       <div class="contacts__content">
         <div class="contacts__title">
@@ -1565,7 +1597,6 @@
           <p class="contacts__time-text">
             последняя запись до 19:00
           </p>
-
 
           <ul class="contacts__phones-inner">
             <li class="contacts__phone">
@@ -1617,15 +1648,186 @@
             </p>
           </div>
         </address>
-
         </form>
       </div>
     </div>
   </div>
-
 </section>
 
+  </main>
 
+  <footer class="footer">
+  <div class="footer__container container">
+    <div class="footer__logo-box logo-box" href="#">
+      <a class="logo-box__logo" href="#header">
+        <img class="logo-box__img" src="images/logo/logo.svg" alt="логотип клиники">
+      </a>
+
+      <div class="logo-box__text">
+        Стоматологическая клиника
+      </div>
+    </div>
+
+    <button class="burger" type="button">
+      <span class="burger__line"></span>
+      <span class="sr-only">Мобильное меню</span>
+    </button>
+
+    <nav class="footer__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="#header">
+            Главная
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#stock">
+            Aкции
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#services">
+            Услуги
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#doctors">
+            Врачи
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#reviews">
+            Отзывы
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#documentation">
+            Лицензии
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#about">
+            О клинике
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#contacts">
+            Контакты
+          </a>
+        </li>
+      </ul>
+
+      <button class="menu__cross" type="button"></button>
+    </nav>
+  </div>
+</footer>
+
+</div>
+
+<div id="popup" class="popup">
+  <div class="popup__body">
+    <div class="popup__content">
+      <a class="popup__close close-popup close-button" href="#">
+        <span class="sr-only">
+          кнопка скрытия попап окна
+        </span>
+      </a>
+
+      <h4 class="popup__title">
+        Для участия в акции подпишитесь на нашу группу в ВКонтакте
+      </h4>
+
+      <button class="popup__button button button--transparent" type="button">
+        <span>Стать участником</span>
+      </button>
+
+      <div class="popup__social-wrapper social-wrapper">
+        <ul class="popup__social social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social__img" src="images/social/telegram.svg" alt="сылка на телеграм">
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social__img" src="images/social/whatsapp.svg" alt="сылка на ватсап">
+            </a>
+          </li>
+        </ul>
+
+        <p class="social-wrapper__text">
+          спросить в мессенджере
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="popup_2" class="popup">
+  <div class="popup__body">
+    <div class="popup__content">
+      <a class="popup__close close-popup close-button" href="#">
+        <span class="sr-only">
+          кнопка скрытия попап окна
+        </span>
+      </a>
+
+      <h4 class="popup__title  popup__title--price">
+        Скачайте прайс-лист и ознакомьтесь с ценами
+      </h4>
+
+      <button class="popup__button button button--transparent" type="button">
+        Скачать
+      </button>
+
+      <div class="popup__social-wrapper social-wrapper">
+        <ul class="popup__social social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social__img" src="images/social/telegram.svg" alt="сылка на телеграм">
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social__img" src="images/social/whatsapp.svg" alt="сылка на ватсап">
+            </a>
+          </li>
+        </ul>
+
+        <p class="social-wrapper__text">
+          спросить в мессенджере
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup_3" class="popup">
+  <div class="popup__body">
+    <div class="popup__content popup__content--video">
+      <a class="popup__close close-popup close-button" href="#">
+        <span class="sr-only">
+          кнопка скрытия попап окна
+        </span>
+      </a>
+
+      <iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?start=42"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
 
 <script src="js/main.min.js"></script>
 </body>

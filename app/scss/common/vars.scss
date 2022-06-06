@@ -3,7 +3,7 @@ $white: #ffff;
 $dark : #474551;
 $blue-900: #09845B;
 $blue-700: #3A9B7B;
-$blue-700-0_8: rgba(#3A9B7B, 0.7);
+$blue-700-0_8: rgba(#3A9B7B, 0.8);
 $blue-500: #1ED499;
 $blue-300: #58EBBB;
 $blue-100: #aef3dc;
@@ -32,11 +32,6 @@ $blue-100: #aef3dc;
     -webkit-box-orient: vertical;
   }
 }
-
-// .class {
-//   font-size: 14px;
-//   @include line-clamp(3);
-// }
 
 //-------------------------//
 
@@ -88,9 +83,5 @@ $md4:576;
     font-style: normal;
   }
 }
-
 //-------------------------//
 
-
-
-//-------------------------//

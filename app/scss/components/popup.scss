@@ -1,0 +1,190 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 5;
+  transition: all 0.3s;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+
+    & .popup {
+      &__content {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+  }
+
+  // .popup__body
+  &__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+  }
+
+  // .popup__content
+  &__content {
+    position: relative;
+    max-width: 480px;
+    padding: 60px 30px 65px 30px;
+    background-color: $blue-100;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.3s;
+    transform: scale(0);
+
+    &--video {
+      max-width: 1284px;
+      width: 100%;
+      padding: 90px 130px;
+
+      @include media-1 {
+        padding: 50px 80px;
+      }
+
+      @include media-2 {
+        padding: 70px 40px;
+      }
+
+      @include media-4 {
+        padding: 45px 10px;
+      }
+
+      & iframe {
+        object-fit: cover;
+        width: 100%;
+        height: 568px;
+
+        @include media-2 {
+          height: 450px;
+        }
+
+        @include media-3 {
+          height: 400px;
+        }
+
+        @include media-4 {
+          height: 250px;
+        }
+      }
+    }
+
+  }
+
+  // .popup__close
+  &__close {
+    position: absolute;
+    top: 13px;   
+    right: 13px;
+  }
+
+  // .popup__title
+  &__title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 28px;
+    color: $blue-700;
+
+    @include media-4 {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    &--price {
+      margin-bottom: 21px;
+
+      &::after {
+        content: '';
+        width: 56px;
+        height: 56px;
+        display: block;
+        margin: 22px auto 0;
+        background-image: url('../images/social/pdf.png');
+      }
+    }
+  }
+
+  .social-wrapper .social {
+    margin-right: 10px;
+  }
+
+  .social-wrapper__text {
+    font-size: 14px;
+  }
+
+  // .popup__button
+  &__button {
+    position: relative;
+    max-width: 334px;
+    width: 100%;
+    display: block;
+    margin: 0 auto 30px;
+
+    span {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 32px;
+        width: 28px;
+        height: 28px;
+        background-image: url('../images/social/vk.png');
+      }
+    }
+
+    @include media-4 {
+      font-size: 16px;
+
+      span {
+        &::before {
+          top: 3px;
+          left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.close-button {
+  display: block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: $white;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 1px;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 1px;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    transform: rotate(-45deg);
+  }
+}

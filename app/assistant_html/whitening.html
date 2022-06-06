@@ -1,142 +1,35 @@
-<section id="doctors" class="doctors section">
-  <div class="container">
-    <h2 class="doctors__title title">
-      Врачи
-    </h2>
+<!DOCTYPE html>
+<html lang="ru">
 
-    <h3 class="doctors__subtitle subtitle">
-      В нашей клинике работают высококлассные специалисты с большим опытом работы. Выберите подходящего врача и
-      запишитесь на консультацию.
-    </h3>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico">
+  <title>Стоматологическая клиника "Семейный доктор"</title>
+  <link rel="stylesheet" href="../css/style.min.css">
+</head>
 
-    <div class="doctors__sliders">
-      <div class="doctors__min-slider-wrapper">
-        <ul class="doctors__min-slider min-slider">
-          <li class="min-slider__item">
-            <img class="min-slider__img" src="images/doctors/min-img-1.png" alt="фото врача">
+<body>
 
-            <div class="min-slider__name">
-              Макаров Михаил Демьянович
-            </div>
+  <main>
+    <section class="therapy specialists">
+      <div class="container">
+        <h2 class="sr-only">
+          Отбеливание
+        </h2>
 
-            <p class="min-slider__profession">
-              Врач-стоматолог <span>Ведущий специалист</span>
-            </p>
-          </li>
+        <h3 class="specialists__subtitle">
+          Можете выбрать профильного врача, специализирующегося на <span>Отбеливание</span>
+        </h3>
 
-          <li class="min-slider__item">
-            <img class="min-slider__img" src="images/doctors/min-img-2.png" alt="фото врача">
+        <p class="specialists__text">
+          Выберите врача который вам подходит и кликните на его фото:
+        </p>
 
-            <div class="min-slider__name">
-              Блинов Егор Егорович
-            </div>
-
-            <p class="min-slider__profession">
-              Врач-стоматолог
-            </p>
-          </li>
-
-          <li class="min-slider__item">
-            <img class="min-slider__img" src="images/doctors/min-img-3.png" alt="фото врача">
-
-            <div class="min-slider__name">
-              Кузьмин Артём Кириллович
-            </div>
-
-            <p class="min-slider__profession">
-              Врач-стоматолог
-            </p>
-          </li>
-
-          <li class="min-slider__item">
-            <img class="min-slider__img" src="images/doctors/min-img-4.png" alt="фото врача">
-
-            <div class="min-slider__name">
-              Соловьева Аделина Фёдоровна
-            </div>
-
-            <p class="min-slider__profession">
-              Врач-стоматолог
-            </p>
-          </li>
-
-          <li class="min-slider__item">
-            <img class="min-slider__img" src="images/doctors/min-img-5.png" alt="фото врача">
-
-            <div class="min-slider__name">
-              Дмитриева Анна Александровна
-            </div>
-
-            <p class="min-slider__profession">
-              Врач-стоматолог
-            </p>
-          </li>
-
-          <li class="min-slider__item">
-            <img class="min-slider__img" src="images/doctors/min-img-6.png" alt="фото врача">
-
-            <div class="min-slider__name">
-              Попова Дарья Даниловна
-            </div>
-
-            <p class="min-slider__profession">
-              Врач-стоматолог
-            </p>
-          </li>
-        </ul>
-      </div>
-
-      <div class="doctors__big-slider-wrapper">
-        <button class="big-slider-btn__prew slide-arow slide-arow--prew" type="button">
-          <span class="sr-only">
-            кнопка переключения на предыдущий слайд
-          </span>
-        </button>
-
-        <button class="big-slider-btn__next slide-arow slide-arow--next" type="button">
-          <span class="sr-only">
-            кнопка переключения на предыдущий слайд
-          </span>
-        </button>
-
-        <div class="box-shadow-wrapper">
-          <ul class="doctors__big-slider big-slider">
-            <li class="big-slider__item">
-              <div class="doctor">
-                <img class="doctor__img" src="images/doctors/big-img-1.png" alt="фото врача">
-
-                <div class="doctor__name">
-                  Макаров Михаил Демьянович
-                </div>
-
-                <p class="doctor__profession">
-                  Врач-стоматолог <span>Ведущий специалист</span>
-                </p>
-
-                <div class="doctor__review">
-                  <p class="doctor__review-title">
-                    Опыт работы более 25 лет
-                  </p>
-
-                  <p class="doctor__review-sertificats">
-                    Действующие сертификаты:
-                  </p>
-
-                  <p class="doctor__review-text">
-                    стоматология ортопедическая; стоматология хирургическая
-                  </p>
-
-                  <p class="doctor__review-direction">
-                    Все виды высококачественного протезирования: <span>съемные несъемные, безметалловые конструкции,
-                      цирконий,
-                      протезирование на имплантах, драгметаллах, вкладки,
-                      виниры, гнатология и хирургия</span>
-                  </p>
-                </div>
-              </div>
-            </li>
-
-            <li class="big-slider__item">
+        <ul class="specialists__list">
+          <!-- <li class="specialists__item">
+            <div class="specialists__shadow">
               <div class="doctor">
                 <img class="doctor__img" src="images/doctors/big-img-2.png" alt="фото врача">
 
@@ -168,13 +61,16 @@
                   <p class="doctor__review-text">
                     имплантация, пародонтология, удаление зубов любой сложности
                   </p>
+
                 </div>
               </div>
-            </li>
+            </div>
+          </li> -->
 
-            <li class="big-slider__item">
+          <li class="specialists__item">
+            <a class="specialists__shadow" href="../doctors_html/doctor_three.html">
               <div class="doctor">
-                <img class="doctor__img" src="images/doctors/big-img-3.png" alt="фото врача">
+                <img class="doctor__img" src="../images/doctors/big-img-3.png" alt="фото врача">
 
                 <div class="doctor__name">
                   Кузьмин Артём Кириллович
@@ -204,11 +100,14 @@
                   <p class="doctor__review-text">
                     протезирование зубов, хирургическое удаление, терапевтическое лечение и отбеливание
                   </p>
+
                 </div>
               </div>
-            </li>
+            </a>
+          </li>
 
-            <li class="big-slider__item">
+          <!-- <li class="specialists__item">
+            <div class="specialists__shadow">
               <div class="doctor">
                 <img class="doctor__img" src="images/doctors/big-img-4.png" alt="фото врача">
 
@@ -240,11 +139,15 @@
                   <p class="doctor__review-text">
                     терапевтическое лечение, эстетическая реставрация зубов и исправление прикуса любой сложности
                   </p>
+
                 </div>
               </div>
-            </li>
+            </div>
 
-            <li class="big-slider__item">
+          </li>
+
+          <li class="specialists__item">
+            <div class="specialists__shadow">
               <div class="doctor">
                 <img class="doctor__img" src="images/doctors/big-img-5.png" alt="фото врача">
 
@@ -276,13 +179,17 @@
                   <p class="doctor__review-text">
                     терапевтическое лечение, все виды протезирования, хирургическое удаление зубов
                   </p>
+
                 </div>
               </div>
-            </li>
+            </div>
 
-            <li class="big-slider__item">
+          </li> -->
+
+          <li class="specialists__item">
+            <a class="specialists__shadow" href="../doctors_html/doctor_six.html">
               <div class="doctor">
-                <img class="doctor__img" src="images/doctors/big-img-6.png" alt="фото врача">
+                <img class="doctor__img" src="../images/doctors/big-img-6.png" alt="фото врача">
 
                 <div class="doctor__name">
                   Попова Дарья Даниловна
@@ -313,36 +220,38 @@
                     терапевтическое лечение, эстетическая реставрация, хирургическое удаление зубов , профессиональная
                     гигиена и отбеливание
                   </p>
+
                 </div>
               </div>
-            </li>
-          </ul>
-        </div>
+            </a>
 
-        <a class="doctors__button button button--transparent" href="#registration">
-          Записаться
+          </li>
+        </ul>
+
+        <ul class="specialists__buttons">
+          <li class="specialists__button">
+            <a class="specialists__link" href="../index.html#assistant">
+              Хотите выбрать другую услугу?
+            </a>
+          </li>
+
+          <li class="specialists__button">
+            <a class="specialists__link" href="../index.html">
+              На главную
+            </a>
+          </li>
+        </ul>
+
+        <a class="specialists__close close-popup close-button" href="../index.html">
+          <span class="sr-only">
+            кнопка скрытия попап окна
+          </span>
         </a>
-
-        <div class="doctors__social-wrapper social-wrapper">
-          <ul class="doctors__social social">
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <img class="social__img" src="images/social/telegram.svg" alt="сылка на тлеграм">
-              </a>
-            </li>
-
-            <li class="social__item">
-              <a class="social__link" href="#">
-                <img class="social__img" src="images/social/whatsapp.svg" alt="сылка на ватсап">
-              </a>
-            </li>
-          </ul>
-
-          <p class="social-wrapper__text">
-            спросить в мессенджере
-          </p>
-        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+  </main>
+
+  <script src="../js/main.min.js"></script>
+</body>
+
+</html>

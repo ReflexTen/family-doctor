@@ -1,13 +1,5 @@
 .free-inspection {
 
-  // .free-inspection__title
-  &__title {}
-
-  // .free-inspection__subtitle
-  &__subtitle {
- 
-  }
-
   // .free-inspection__inner
   &__inner {
     display: flex;
@@ -42,10 +34,11 @@
     }
 
     @include media-4 {
-       max-width: 100%;
-       &:not(:last-child){
-         margin-bottom: 30px;
-       }
+      max-width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
   }
 
@@ -95,23 +88,9 @@
   // .free-inspection__button
   &__button {
     display: block;
-    // padding: 15px 136px;
+    max-width: 404px;
+    width: 100%;
+    text-align: center;
     margin: 0 auto;
-
-    // @include media-4 {
-    //   padding: 15px 74px;
-    // }
   }
-
-  
 }
-
-.section {}
-
-.container {}
-
-.title {}
-
-.subtitle {}
-
-.button {}

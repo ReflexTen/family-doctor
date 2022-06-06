@@ -19,7 +19,6 @@
 
     @include media-3 {
       background-position: right 65% bottom 0;
-      // background-size: 100%;
       padding: 36px 0;
     }
 
@@ -31,26 +30,29 @@
 
   // .registration__content
   &__content {
-    max-width: 520px;
-    width: 100%;
     margin-left: auto;
-    padding: 30px 3px 25px;
-    background-color: $blue-100;
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    text-align: center;
+  }
+}
 
-    @include media-3 {
-      max-width: 482px;
-      background-color: rgba(#aef3dc, 0.8);
-    }
+.record {
+  max-width: 520px;
+  width: 100%;
+  padding: 30px 3px 25px;
+  background-color: $blue-100;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  text-align: center;
 
-    @include media-4 {
-      max-width: 400px;
-    }
+  @include media-3 {
+    max-width: 482px;
+    background-color: rgba(#aef3dc, 0.8);
   }
 
-  // .registration__title
+  @include media-4 {
+    max-width: 400px;
+  }
+
+  // .record__title
   &__title {
     margin: 0 auto 20px;
     max-width: 410px;
@@ -65,7 +67,7 @@
     }
   }
 
-  // .registration__subtitle
+  // .record__subtitle
   &__subtitle {
     margin: 0 auto 30px;
     max-width: 410px;
@@ -80,16 +82,15 @@
     }
   }
 
-  // .registration__form
+  // .record__form
   &__form {
     max-width: 300px;
     width: 100%;
     margin: 0 auto;
   }
 
-  // .registration__input
+  // .record__input
   &__input {
-    // display: block;
     width: 100%;
     padding: 7.5px;
     margin-bottom: 20px;
@@ -108,9 +109,8 @@
     }
   }
 
-  // .registration__button
+  // .record__button
   &__button {
     width: 100%;
-
   }
 }

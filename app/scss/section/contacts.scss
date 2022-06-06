@@ -1,5 +1,7 @@
 .contacts {
   padding: 0;
+  position: relative;
+  background-color: #dcece7;
 
   @include media-3 {
     padding-top: 543px;
@@ -12,29 +14,22 @@
 
   // .contacts__wrapper
   &__wrapper {
-    padding: 30px 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right 75% bottom 0;
-
-    @include media-1 {
-      background-position: right 55% bottom 0;
-    }
-
-    @include media-2 {
-      background-position: right 45% bottom 0;
-    }
-
-    // @include media-4 {
-    //   background-position: right 35% bottom 0;
-    // }
+    position: absolute;
+    top: 30px;
+    max-width: 578px;
+    width: 100%;
 
     @include media-3 {
-      min-height: 560px;
+      left: 50%;
+      transform: translateX(-50%);
     }
+
     @include media-4 {
-      min-height: 100%;
-      background-image: none;
+      position: static;
+      left: 0;
+      transform: none;
+      margin: 0 auto;
+      padding: 20px 0;
     }
   }
 
@@ -45,17 +40,13 @@
     margin-right: auto;
     padding: 25px 20px 25px 60px;
     background: $blue-700-0_8;
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     text-align: left;
     color: $white;
     font-weight: 500;
     line-height: 1.2;
 
-    @include media-3 {
-      transform: translateY(-545px);
-      margin: 0 auto;
-    }
     @include media-4 {
       transform: translateY(0);
       padding: 15px 5px 15px 15px;
@@ -73,9 +64,6 @@
       margin-bottom: 5px;
     }
   }
-
-  // .contacts__address
-  &__address {}
 
   // .contacts__text
   &__text {
@@ -110,9 +98,6 @@
     }
   }
 
-  // .contacts__time
-  &__time {}
-
   // .contacts__time-text
   &__time-text {
     margin-bottom: 25px;
@@ -135,20 +120,11 @@
     }
   }
 
-  // .contacts__phone
-  &__phone {}
-
-  // .contacts__phone-link
-  &__phone-link {}
-
   // .contacts__social-wrapper
   &__social-wrapper {
     justify-content: flex-start;
     margin-bottom: 20px;
   }
-
-  // .contacts__social
-  &__social {}
 
   // .contacts__vk
   &__vk {
@@ -176,6 +152,7 @@
         margin-right: 10px;
       }
     }
+
     // .social-wrapper__text
     &__text {
       @include media-4 {
@@ -185,7 +162,8 @@
   }
 }
 
-.section {}
-
-.container {}
-
+.map {
+  @include media-4 {
+    display: none;
+  }
+}

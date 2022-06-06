@@ -1,0 +1,162 @@
+.specialists {
+  padding: 90px 0 230px;
+  background-color: $blue-100;
+
+  @include media-3 {
+    padding: 50px 0 130px;
+  }
+
+  @include media-4 {
+    padding: 50px 0 80px;
+  }
+
+  // .specialists__subtitle
+  &__subtitle {
+    margin-bottom: 60px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.2;
+    color: $blue-700;
+
+    @include media-3 {
+      font-size: 30px;
+    }
+
+    @include media-4 {
+      font-size: 24px;
+    }
+
+    span {
+      display: block;
+      color: black;
+    }
+  }
+
+  // .specialists__text
+  &__text {
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25;
+
+    @include media-4 {
+      font-size: 18px;
+    }
+  }
+
+  // .specialists__list
+  &__list {
+
+    .slick-slide {
+      &>div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        // margin: 0 15px;
+
+
+        &>li {
+          &:not(:last-child) {
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+
+    .slick-dots {
+      bottom: 50%;
+      flex-direction: column;
+      align-items: center;
+
+      &>li:not(:last-child) {
+        margin-right: 0;
+      }
+
+      @include media-3 {
+        bottom: 20px;
+        flex-direction: row;
+        align-items: baseline;
+
+        &>li:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .slick-list {
+      padding-right: 15px;
+      padding-left: 15px;
+
+      @include media-3 {
+        padding-right: 1px;
+        padding-left: 1px;
+      }
+    }
+
+    .doctor {
+      &__review {
+        @include media-3 {
+          padding: 5px;
+        }
+      }
+    }
+  }
+
+  // .specialists__item
+  &__item {
+    padding-top: 3px;
+
+    @include media-3 {
+      margin: 0 5px;
+    }
+  }
+
+  &__shadow {
+
+    display: block;
+    position: relative;
+    max-width: 630px;
+    max-height: 690px;
+    width: 100%;
+    padding: 40px 10px 0 30px;
+    background-color: white;
+    border-radius: 20px;
+
+    @include media-3 {
+      padding: 10px 5px 0 10px;
+      max-width: 430px;
+      margin: 0 auto;
+    }
+
+  }
+
+  // .specialists__buttons
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media-4 {
+      flex-direction: column;
+      font-size: 16px;
+    }
+  }
+
+  // .specialists__button
+  &__button {
+    @include media-4 {
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  // .specialists__close
+  &__close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 10;
+  }
+}
