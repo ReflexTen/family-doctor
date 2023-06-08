@@ -1,34 +1,55 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="../favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Стоматологическая клиника "Семейный доктор"</title>
+    <link rel="stylesheet" href="../css/style.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="images/favicon/favicon.ico">
-  <title>Стоматологическая клиника "Семейный доктор"</title>
-  <link rel="stylesheet" href="../css/style.min.css">
-</head>
+  <body>
+    <main>
+      <section class="therapy specialists">
+        <div class="container">
+          <h2 class="sr-only">Ортодонтия</h2>
 
-<body>
+          <h3 class="specialists__subtitle">
+            Можете выбрать профильного врача, специализирующегося на
+            <span>Ортодонтия</span>
+          </h3>
 
-  <main>
-    <section class="therapy specialists">
-      <div class="container">
-        <h2 class="sr-only">
-          Ортодонтия
-        </h2>
+          <p class="specialists__text">
+            Выберите врача который вам подходит и кликните на его фото:
+          </p>
 
-        <h3 class="specialists__subtitle">
-          Можете выбрать профильного врача, специализирующегося на <span>Ортодонтия</span>
-        </h3>
-
-        <p class="specialists__text">
-          Выберите врача который вам подходит и кликните на его фото:
-        </p>
-
-        <ul class="specialists__list">
-          <!-- <li class="specialists__item">
+          <ul class="specialists__list">
+            <!-- <li class="specialists__item">
             <div class="specialists__shadow">
               <div class="doctor">
                 <img class="doctor__img" src="images/doctors/big-img-2.png" alt="фото врача">
@@ -67,7 +88,7 @@
             </div>
           </li> -->
 
-          <!-- <li class="specialists__item">
+            <!-- <li class="specialists__item">
             <div class="specialists__shadow">
               <div class="doctor">
                 <img class="doctor__img" src="images/doctors/big-img-3.png" alt="фото врача">
@@ -106,47 +127,48 @@
             </div>
           </li> -->
 
-          <li class="specialists__item">
-            <a class="specialists__shadow" href="../doctors_html/doctor_four.html">
-              <div class="doctor">
-                <img class="doctor__img" src="../images/doctors/big-img-4.png" alt="фото врача">
+            <li class="specialists__item">
+              <a
+                class="specialists__shadow"
+                href="../doctors_html/doctor_four.html"
+              >
+                <div class="doctor">
+                  <img
+                    class="doctor__img"
+                    src="../images/doctors/big-img-4.png"
+                    alt="фото врача"
+                  />
 
-                <div class="doctor__name">
-                  Соловьева Аделина Фёдоровна
+                  <div class="doctor__name">Соловьева Аделина Фёдоровна</div>
+
+                  <p class="doctor__profession">
+                    Врач-стоматолог <span>Ведущий специалист</span>
+                  </p>
+
+                  <div class="doctor__review">
+                    <p class="doctor__review-title">Опыт работы более 10 лет</p>
+
+                    <p class="doctor__review-sertificats">
+                      Действующие сертификаты:
+                    </p>
+
+                    <p class="doctor__review-text">
+                      стоматология общей практики; стоматология терапевтическая;
+                      стоматология ортодонтическая
+                    </p>
+
+                    <p class="doctor__review-direction">Направленность:</p>
+
+                    <p class="doctor__review-text">
+                      терапевтическое лечение, эстетическая реставрация зубов и
+                      исправление прикуса любой сложности
+                    </p>
+                  </div>
                 </div>
+              </a>
+            </li>
 
-                <p class="doctor__profession">
-                  Врач-стоматолог <span>Ведущий специалист</span>
-                </p>
-
-                <div class="doctor__review">
-                  <p class="doctor__review-title">
-                    Опыт работы более 10 лет
-                  </p>
-
-                  <p class="doctor__review-sertificats">
-                    Действующие сертификаты:
-                  </p>
-
-                  <p class="doctor__review-text">
-                    стоматология общей практики; стоматология терапевтическая; стоматология ортодонтическая
-                  </p>
-
-                  <p class="doctor__review-direction">
-                    Направленность:
-                  </p>
-
-                  <p class="doctor__review-text">
-                    терапевтическое лечение, эстетическая реставрация зубов и исправление прикуса любой сложности
-                  </p>
-
-                </div>
-              </div>
-            </a>
-
-          </li>
-
-          <!-- <li class="specialists__item">
+            <!-- <li class="specialists__item">
             <div class="specialists__shadow">
               <div class="doctor">
                 <img class="doctor__img" src="images/doctors/big-img-5.png" alt="фото врача">
@@ -226,32 +248,30 @@
             </div>
 
           </li> -->
-        </ul>
+          </ul>
 
-        <ul class="specialists__buttons">
-          <li class="specialists__button">
-            <a class="specialists__link" href="../index.html#assistant">
-              Хотите выбрать другую услугу?
-            </a>
-          </li>
+          <ul class="specialists__buttons">
+            <li class="specialists__button">
+              <a class="specialists__link" href="../index.html#assistant">
+                Хотите выбрать другую услугу?
+              </a>
+            </li>
 
-          <li class="specialists__button">
-            <a class="specialists__link" href="../index.html">
-              На главную
-            </a>
-          </li>
-        </ul>
+            <li class="specialists__button">
+              <a class="specialists__link" href="../index.html"> На главную </a>
+            </li>
+          </ul>
 
-        <a class="specialists__close close-popup close-button" href="../index.html">
-          <span class="sr-only">
-            кнопка скрытия попап окна
-          </span>
-        </a>
-      </div>
-    </section>
-  </main>
+          <a
+            class="specialists__close close-popup close-button"
+            href="../index.html"
+          >
+            <span class="sr-only"> кнопка скрытия попап окна </span>
+          </a>
+        </div>
+      </section>
+    </main>
 
-  <script src="../js/main.min.js"></script>
-</body>
-
+    <script src="../js/main.min.js"></script>
+  </body>
 </html>
