@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link
+    rel="apple-touch-icon"
+    sizes="76x76"
+    href="favicons/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="favicons/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="favicons/favicon-16x16.png"
+  />
+  <link rel="manifest" href="favicons/site.webmanifest" />
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Стоматологическая клиника "Семейный доктор"</title>
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+
+  <body>
+    <div class="wrapper">
+      <header id="header" class="header">
+  <div class="container">
+    <div class="header__top header-top">
+      <div class="header-top__info">
+
+        <div class="header-top__logo-box logo-box">
+          <a class="logo-box__logo" href="#header">
+            <img class="logo-box__img" src="images/logo/logo.svg" alt="логотип клиники">
+          </a>
+
+          <div class="logo-box__text">
+            Стоматологическая клиника
+          </div>
+        </div>
+
+        <address class="header-top__address">
+          <ul class="header-top__inner">
+            <li class="header-top__item header-top__item--map">
+              <div class="header-top__address-title header-top__address-title--gis">
+                Адрес
+              </div>
+              <p class="header-top__address-text">
+                г. Коломна, ул. Октябрьской революции д. 161
+              </p>
+            </li>
+
+            <li class="header-top__item header-top__item--time">
+              <div class="header-top__address-title header-top__address-title--clock">
+                Время работы
+              </div>
+              <p class="header-top__address-text">
+                Работаем без выходных с 9:00 до 21:00
+              </p>
+            </li>
+          </ul>
+        </address>
+      </div>
+
+      <div class="header-top__link">
+        <ul class="header-top__social social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social__img" src="images/social/telegram.svg" alt="сылка на тлеграм">
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social__img" src="images/social/whatsapp.svg" alt="сылка на ватсап">
+            </a>
+          </li>
+        </ul>
+
+        <div class="header-top__phone">
+          <ul class="header-top__phone-inner">
+            <li class="header-top__phone-item">
+              <a class="header-top__phone-number" href="tel:+74966141515">
+                +7 (496) 614-15-15
+              </a>
+            </li>
+
+            <li class="header-top__phone-item">
+              <a class="header-top__phone-number" href="tel:+79260255767">
+                +7 (926) 025-57-67
+              </a>
+            </li>
+          </ul>
+          <a class="header-top__phone-link" href="#">Перезвоните мне</a>
+        </div>
+
+        <button class="burger" type="button">
+          <span class="burger__line"></span>
+          <span class="sr-only">Мобильное меню</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="header__menu menu">
+    <div class="container">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="#header">
+            Главная
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#stock">
+            Акции
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#services">
+            Услуги
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#doctors">
+            Врачи
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#reviews">
+            Отзывы
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#documentation">
+            Лицензии
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#about">
+            О клинике
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#contacts">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <button class="menu__cross" type="button"></button>
+  </nav>
+
+  <div class="header-container" style="background-image: url('images/bg/header-bg.jpg')">
+    <div class="container">
+      <h1 class="header-container__title">
+        Лечение и протезирование зубов по Европейским стандартам
+      </h1>
+
+      <div class="header-container__subtitle">
+        Предоставим 2-3 плана качественного лечения под ваш бюджет
+      </div>
+
+      <div class="header-container__box">
+        <p class="header-container__text">
+          Запишитесь на <span>бесплатную</span> первичную консультацию - диагностику зубов
+        </p>
+
+        <a class="header-container__button button" href="#registration">
+          Записаться
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <main class="main">
+        <section class="privelege">
+  <h2 class="sr-only">
+    Привелегии
+  </h2>
+  <div class="container">
+    <ul class="privelege__inner">
+
+      <li class="privelege__item privelege__item--calendar">
+        <div class="privelege__title">
+          Работаем с 2011 года
+        </div>
+
+        <p class="privelege__text">
+          Многолетний опыт работы - залог качественного сервиса
+        </p>
+      </li>
+
+      <li class="privelege__item privelege__item--usergear">
+        <div class="privelege__title">
+          Опытные врачи
+        </div>
+
+        <p class="privelege__text">
+          Огромный опыт персонала и слаженность работы
+        </p>
+      </li>
+
+      <li class="privelege__item privelege__item--fingerprint">
+        <div class="privelege__title">
+          Уникальный подход
+        </div>
+
+        <p class="privelege__text">
+          Применяем в своей работе современные технологии
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+        <section class="free-inspection section">
+  <div class="container">
+    <h2 class="free-inspection__title title">
+      Бесплатная консультация врача
+    </h2>
+
+    <h3 class="free-inspection__subtitle subtitle">
+      На бесплатной консультации врач клиники проведет диагностику всех зубов:
+    </h3>
+
+    <ul class="free-inspection__inner">
+      <li class="free-inspection__item">
+        <div class="free-inspection__item-wrapper">
+          <img class="free-inspection__item-img" src="images/free-inspection/free-inspection-one.jpg"
+            alt="Фото полного осмотра" width="410" height="280">
+        </div>
+
+        <h4 class="free-inspection__item-title">
+          Полный осмотр и диагностика полости рта
+        </h4>
+        <p class="free-inspection__item-text">
+          При необходимости сделаем дополнительный снимок зубов, у нас в клинике
+        </p>
+      </li>
+
+      <li class="free-inspection__item">
+        <div class="free-inspection__item-wrapper">
+          <img class="free-inspection__item-img" src="images/free-inspection/free-inspection-two.jpg"
+            alt="Фото полного осмотра" width="410" height="280">
+        </div>
+
+        <h4 class="free-inspection__item-title">
+          Составит 2-3 плана лечения на выбор
+        </h4>
+        <p class="free-inspection__item-text">
+          Вы сможете выбрать подходящий план лечения, исходя из бюджета
+        </p>
+      </li>
+
+      <li class="free-inspection__item">
+        <div class="free-inspection__item-wrapper">
+          <img class="free-inspection__item-img" src="images/free-inspection/free-inspection-three.jpg"
+            alt="Фото полного осмотра" width="410" height="280">
+        </div>
+
+        <h4 class="free-inspection__item-title">
+          При необходимости проведем проф. гигиену
+        </h4>
+        <p class="free-inspection__item-text">
+          Чистка зубов в 4 этапа
+        </p>
+      </li>
+    </ul>
+
+    <a class="free-inspection__button button" href="#registration">
+      Записаться
+    </a>
+  </div>
+</section>
+        <section id="stock" class="stock section">
+  <div class="container">
+    <h2 class="stock__title title">
+      Акции
+    </h2>
+
+    <h3 class="stock__subtitle subtitle">
+      Для подписчиков группы VK стоматологической клиники "Семейный доктор" <span>действуют акции и специальные
+        предложения</span>
+    </h3>
+
+    <div class="stock__inner-wrapper">
+      <button class="stock-btn__prew slide-arow slide-arow--prew" type="button">
+        <span class="sr-only">
+          кнопка переключения на предыдущий слайд
+        </span>
+      </button>
+
+      <button class="stock-btn__next slide-arow slide-arow--next" type="button">
+        <span class="sr-only">
+          кнопка переключения на предыдущий слайд
+        </span>
+      </button>
+
+      <ul class="stock__inner">
+        <li class="stock__item">
+          <img class="stock__item-img" src="images/stock/slide-1.png" alt="">
+
+          <a class="popup-link stock__button button button--transparent" href="#popup">
+            Участвовать
+          </a>
+        </li>
+
+        <li class="stock__item">
+          <img class="stock__item-img" src="images/stock/slide-2.png" alt="">
+
+          <a class="popup-link stock__button button button--transparent" href="#popup">
+            Участвовать
+          </a>
+        </li>
+
+        <li class="stock__item">
+          <img class="stock__item-img" src="images/stock/slide-3.png" alt="">
+
+          <a class="popup-link stock__button button button--transparent" href="#popup">
+            Участвовать
+          </a>
+        </li>
+
+        <li class="stock__item">
+          <img class="stock__item-img" src="images/stock/slide-2.png" alt="">
+
+          <a class="popup-link stock__button button button--transparent" href="#popup">
+            Участвовать
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section> <section id="services" class="services section">
+  <div class="container">
+    <h2 class="services__title title">
+      Услуги
+    </h2>
+
+    <h3 class="services__subtitle subtitle">
+      Наша клиника предоставляет широкий спектр услуг, выберите подходящую вам и <span>запишитесь на бесплатную
+        консультацию</span>
+    </h3>
+
+    <ul class="services__banners banners">
+      <li class="banners__item">
+        <img class="banners__img" src="./images/services/services-1.png" alt="Изображение удаления зуба">
+
+        <div class="banners__top">
+          <h3 class="banners__title">
+            Хирургия
+          </h3>
+
+          <p class="banners__text">
+            Удаление зуба является одной из самых распространенных операций в стоматологической практике.
+          </p>
+
+          <ul class="banners__services-inner">
+            <li class="banners__services-item">
+              Удаление зубов любой сложности
+            </li>
+          </ul>
+        </div>
+
+        <div class="banners__bottom">
+          <div class="banners__social-wrapper social-wrapper">
+            <ul class="banners__social social">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="./images/social/telegram.svg" alt="сылка на телеграм">
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="./images/social/whatsapp.svg" alt="сылка на ватсап">
+                </a>
+              </li>
+            </ul>
+
+            <p class="social-wrapper__text">
+              спросить в мессенджере
+            </p>
+          </div>
+
+          <div class="banners__buttons">
+            <a class="banners__button button button--transparent" href="#registration">
+              Записаться
+            </a>
+
+            <a class="banners__button button button--transparent-blue popup-link" href="#popup_2">
+              Узнать цены
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li class="banners__item">
+        <img class="banners__img" src="images/services/services-2.png"
+          alt="Изображение инструментов терапевта-стоматолога">
+
+        <div class="banners__top">
+          <h3 class="banners__title">
+            Терапия
+          </h3>
+
+          <p class="banners__text">
+            Лечение напрямую зависит от стадии заболевания. Мы подбираем наиболее эффективные методы диагностики и
+            терапии.
+          </p>
+
+          <ul class="banners__services-inner">
+            <li class="banners__services-item">
+              Кариозных и некариозных поражений
+            </li>
+
+            <li class="banners__services-item">
+              Пульпитов и периодонтитов
+            </li>
+
+            <li class="banners__services-item">
+              Художественная реставрация зубов
+            </li>
+          </ul>
+        </div>
+
+        <div class="banners__bottom">
+          <div class="banners__social-wrapper social-wrapper">
+            <ul class="banners__social social">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="images/social/telegram.svg" alt="сылка на тлеграм">
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="images/social/whatsapp.svg" alt="сылка на ватсап">
+                </a>
+              </li>
+            </ul>
+
+            <p class="social-wrapper__text">
+              спросить в мессенджере
+            </p>
+          </div>
+
+          <div class="banners__buttons">
+            <a class="banners__button button button--transparent" href="#registration">
+              Записаться
+            </a>
+
+            <a class="banners__button button button--transparent-blue popup-link" href="#popup_2">
+              Узнать цены
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li class="banners__item">
+        <img class="banners__img" src="images/services/services-3.png" alt="Изображение коронки зуба">
+
+        <div class="banners__top">
+          <h3 class="banners__title">
+            Ортопедия
+          </h3>
+
+          <p class="banners__text">
+            Помогает решить проблемы, связанные с аномалиями, приобретенными дефектами, повреждениями и деформациями
+            органов жевательно-речевого аппарата.
+          </p>
+
+          <ul class="banners__services-inner">
+            <li class="banners__services-item">
+              Коронки и мосты керамические
+            </li>
+
+            <li class="banners__services-item">
+              Коронки и мосты циркониевые
+            </li>
+
+            <li class="banners__services-item">
+              Съёмное протезирование (протезы, бюгеля, мягкие протезы)
+            </li>
+
+            <li class="banners__services-item">
+              Установка виниров
+            </li>
+          </ul>
+        </div>
+
+        <div class="banners__bottom">
+          <div class="banners__social-wrapper social-wrapper">
+            <ul class="banners__social social">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="images/social/telegram.svg" alt="сылка на тлеграм">
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="images/social/whatsapp.svg" alt="сылка на ватсап">
+                </a>
+              </li>
+            </ul>
+
+            <p class="social-wrapper__text">
+              спросить в мессенджере
+            </p>
+          </div>
+
+          <div class="banners__buttons">
+            <a class="banners__button button button--transparent" href="#registration">
+              Записаться
+            </a>
+
+            <a class="banners__button button button--transparent-blue popup-link" href="#popup_2">
+              Узнать цены
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li class="banners__item">
+        <img class="banners__img" src="images/services/services-4.png" alt="Изображение узубных имплантов">
+
+        <div class="banners__top">
+          <h3 class="banners__title">
+            Имплантация
+          </h3>
+
+          <p class="banners__text">
+            Это операция по установке в челюстную ткань специального стоматологического штифта, который будет играть
+            роль корня.
+          </p>
+
+          <ul class="banners__services-inner">
+            <li class="banners__services-item">
+              Установка имплантов OSSTEM implant
+            </li>
+
+            <li class="banners__services-item">
+              Наращивание кости (все виды аугментации) OSSTEM implant
+            </li>
+
+            <li class="banners__services-item">
+              Имплантация зубов по системе All ON4-All ON6
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="banners__bottom">
+          <div class="banners__social-wrapper social-wrapper">
+            <ul class="banners__social social">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="images/social/telegram.svg" alt="сылка на тлеграм">
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="images/social/whatsapp.svg" alt="сылка на ватсап">
+                </a>
+              </li>
+            </ul>
+
+            <p class="social-wrapper__text">
+              спросить в мессенджере
+            </p>
+          </div>
+
+          <div class="banners__buttons">
+            <a class="banners__button button button--transparent" href="#registration">
+              Записаться
+            </a>
+
+            <a class="banners__button button button--transparent-blue popup-link" href="#popup_2">
+              Узнать цены
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li class="banners__item">
+        <img class="banners__img" src="images/services/services-5.png" alt="Изображение бректов на зубах">
+
+        <div class="banners__top">
+          <h3 class="banners__title">
+            Ортодонтия
+          </h3>
+
+          <p class="banners__text">
+            Поможет сделать вашу улыбку красивой и исправит прикус. Исправляет аномалии челюстей, положения челюстей в
+            черепе, формы, величины, соотношения зубных дуг.
+          </p>
+
+          <ul class="banners__services-inner">
+            <li class="banners__services-item">
+              Установка брекет систем
+            </li>
+
+            <li class="banners__services-item">
+              Цифровое ортодонтическое лечение прозрачными каппами
+            </li>
+
+            <li class="banners__services-item">
+              Полная диагностика и лечение взрослых и детей
+            </li>
+          </ul>
+        </div>
+
+        <div class="banners__bottom">
+          <div class="banners__social-wrapper social-wrapper">
+            <ul class="banners__social social">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="images/social/telegram.svg" alt="сылка на тлеграм">
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="images/social/whatsapp.svg" alt="сылка на ватсап">
+                </a>
+              </li>
+            </ul>
+
+            <p class="social-wrapper__text">
+              спросить в мессенджере
+            </p>
+          </div>
+
+          <div class="banners__buttons">
+            <a class="banners__button button button--transparent" href="#registration">
+              Записаться
+            </a>
+
+            <a class="banners__button button button--transparent-blue popup-link" href="#popup_2">
+              Узнать цены
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li class="banners__item">
+        <img class="banners__img" src="images/services/services-6.png" alt="Изображение отбеленного зуба">
+
+        <div class="banners__top">
+          <h3 class="banners__title">
+            Отбеливание зубов
+          </h3>
+
+          <p class="banners__text">
+            Стоматологическая процедура изменения оттенка зубной эмали. Отбеливание зубов относится к области
+            косметической стоматологии.
+          </p>
+
+          <ul class="banners__services-inner">
+            <li class="banners__services-item">
+              Система Opalescence Boost
+            </li>
+          </ul>
+        </div>
+
+        <div class="banners__bottom">
+          <div class="banners__social-wrapper social-wrapper">
+            <ul class="banners__social social">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="images/social/telegram.svg" alt="сылка на тлеграм">
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="images/social/whatsapp.svg" alt="сылка на ватсап">
+                </a>
+              </li>
+            </ul>
+
+            <p class="social-wrapper__text">
+              спросить в мессенджере
+            </p>
+          </div>
+
+          <div class="banners__buttons">
+            <a class="banners__button button button--transparent" href="#registration">
+              Записаться
+            </a>
+
+            <a class="banners__button button button--transparent-blue popup-link" href="#popup_2">
+              Узнать цены
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="services__technology technology">
+      <div class="technology__top">
+        <div class="technology__info">
+          <h3 class="technology__title">
+            Технология профессиональной гигиены полости рта
+            <span>в 4 этапа</span>
+          </h3>
+
+          <div class="technology__video">
+            <p class="technology__video-text">
+              Посмотрите видео о технологии
+            </p>
+
+            <a class="technology__video-link popup-link" href="#popup_3"
+              style="background-image: url('images/services/technology-bg.jpg')">
+              <span class="sr-only">видео о технологии</span>
+            </a>
+          </div>
+
+          <a class="banners__button banners__button--video button button--transparent-blue popup-link" href="#popup_2">
+            Узнать цены
+          </a>
+        </div>
+
+        <ul class="technology__top-inner">
+          <li class="technology__top-item">
+            Максимальная чистка в труднодоступных местах от камня и налета
+          </li>
+
+          <li class="technology__top-item">
+            Применение AIR FLOW не доставляет дискомфорта и боли
+          </li>
+
+          <li class="technology__top-item">
+            Такая чистка помогает убрать неприятный запах изо рта
+          </li>
+
+          <li class="technology__top-item">
+            Осветляет зубы на 2-3 тона
+          </li>
+
+          <li class="technology__top-item">
+            Очищает протезы брекеты и другие ортодонтические конструкции
+          </li>
+
+          <li class="technology__top-item">
+            Убирает пятна от кофе, чая, табака и красного вина
+          </li>
+
+          <li class="technology__top-item">
+            Удаляет налет курильщика
+          </li>
+
+          <li class="technology__top-item">
+            Снижается развитие кариозного процесса
+          </li>
+
+          <li class="technology__top-item">
+            Все этапы безболезнены и атравматичны
+          </li>
+        </ul>
+      </div>
+
+      <div class="technology__bottom" style="background-image: url('images/services/bottom-bg.jpg')">
+        <ul class="technology__step-inner">
+          <li class="technology__step-item">
+            <span class="technology__step-num">1</span>
+            <p class="technology__step-text">Ультразвуковым аппаратом производится максимальная чистка в труднодоступных
+              местах от поддесневого и наддесневого камня и налета.</p>
+          </li>
+
+          <li class="technology__step-item">
+            <span class="technology__step-num">2</span>
+            <p class="technology__step-text">Применение AIR FLOW не доставляет дискомфорта и боли, очищая межзубные
+              отложения.</p>
+          </li>
+
+          <li class="technology__step-item">
+            <span class="technology__step-num">3</span>
+            <p class="technology__step-text">Полировка зубов при помощи специальных паст и щеточек. Такая чистка
+              устраняет все неровности скопившихся отложений, освежает и убирает неприятный запах.</p>
+          </li>
+
+          <li class="technology__step-item">
+            <span class="technology__step-num">4</span>
+            <p class="technology__step-text">Покрытие зубов ременилизирующим гелем. Снимает чувствительность,
+              предотвращает развитие кариеса. </p>
+          </li>
+        </ul>
+
+        <div class="technology__social-wrapper social-wrapper">
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img" src="images/social/telegram.svg" alt="сылка на тлеграм">
+              </a>
+            </li>
+
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img" src="images/social/whatsapp.svg" alt="сылка на ватсап">
+              </a>
+            </li>
+          </ul>
+
+          <p class="social-wrapper__text">
+            спросить в мессенджере
+          </p>
+        </div>
+
+        <div class="technology__buttons">
+          <a class="banners__button button button--transparent" href="#registration">
+            Записаться
+          </a>
+
+          <a class="technology__bottom-button button" href="#assistant">
+            Выбрать врача
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        <section id="doctors" class="doctors section">
+  <div class="container">
+    <h2 class="doctors__title title">
+      Врачи
+    </h2>
+
+    <h3 class="doctors__subtitle subtitle">
+      В нашей клинике работают высококлассные специалисты с большим опытом работы. Выберите подходящего врача и
+      запишитесь на консультацию.
+    </h3>
+
+    <div class="doctors__sliders">
+      <div class="doctors__min-slider-wrapper">
+        <ul class="doctors__min-slider min-slider">
+          <li class="min-slider__item">
+            <img class="min-slider__img" src="images/doctors/min-img-1.png" alt="фото врача">
+
+            <div class="min-slider__name">
+              Макаров Михаил Демьянович
+            </div>
+
+            <p class="min-slider__profession">
+              Врач-стоматолог <span>Ведущий специалист</span>
+            </p>
+          </li>
+
+          <li class="min-slider__item">
+            <img class="min-slider__img" src="images/doctors/min-img-2.png" alt="фото врача">
+
+            <div class="min-slider__name">
+              Блинов Егор Егорович
+            </div>
+
+            <p class="min-slider__profession">
+              Врач-стоматолог
+            </p>
+          </li>
+
+          <li class="min-slider__item">
+            <img class="min-slider__img" src="images/doctors/min-img-3.png" alt="фото врача">
+
+            <div class="min-slider__name">
+              Кузьмин Артём Кириллович
+            </div>
+
+            <p class="min-slider__profession">
+              Врач-стоматолог
+            </p>
+          </li>
+
+          <li class="min-slider__item">
+            <img class="min-slider__img" src="images/doctors/min-img-4.png" alt="фото врача">
+
+            <div class="min-slider__name">
+              Соловьева Аделина Фёдоровна
+            </div>
+
+            <p class="min-slider__profession">
+              Врач-стоматолог
+            </p>
+          </li>
+
+          <li class="min-slider__item">
+            <img class="min-slider__img" src="images/doctors/min-img-5.png" alt="фото врача">
+
+            <div class="min-slider__name">
+              Дмитриева Анна Александровна
+            </div>
+
+            <p class="min-slider__profession">
+              Врач-стоматолог
+            </p>
+          </li>
+
+          <li class="min-slider__item">
+            <img class="min-slider__img" src="images/doctors/min-img-6.png" alt="фото врача">
+
+            <div class="min-slider__name">
+              Попова Дарья Даниловна
+            </div>
+
+            <p class="min-slider__profession">
+              Врач-стоматолог
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="doctors__big-slider-wrapper">
+        <button class="big-slider-btn__prew slide-arow slide-arow--prew" type="button">
+          <span class="sr-only">
+            кнопка переключения на предыдущий слайд
+          </span>
+        </button>
+
+        <button class="big-slider-btn__next slide-arow slide-arow--next" type="button">
+          <span class="sr-only">
+            кнопка переключения на предыдущий слайд
+          </span>
+        </button>
+
+        <div class="box-shadow-wrapper">
+          <ul class="doctors__big-slider big-slider">
+            <li class="big-slider__item">
+              <div class="doctor">
+                <img class="doctor__img" src="images/doctors/big-img-1.png" alt="фото врача">
+
+                <div class="doctor__name">
+                  Макаров Михаил Демьянович
+                </div>
+
+                <p class="doctor__profession">
+                  Врач-стоматолог <span>Ведущий специалист</span>
+                </p>
+
+                <div class="doctor__review">
+                  <p class="doctor__review-title">
+                    Опыт работы более 25 лет
+                  </p>
+
+                  <p class="doctor__review-sertificats">
+                    Действующие сертификаты:
+                  </p>
+
+                  <p class="doctor__review-text">
+                    стоматология ортопедическая; стоматология хирургическая
+                  </p>
+
+                  <p class="doctor__review-direction">
+                    Все виды высококачественного протезирования: <span>съемные несъемные, безметалловые конструкции,
+                      цирконий,
+                      протезирование на имплантах, драгметаллах, вкладки,
+                      виниры, гнатология и хирургия</span>
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="big-slider__item">
+              <div class="doctor">
+                <img class="doctor__img" src="images/doctors/big-img-2.png" alt="фото врача">
+
+                <div class="doctor__name">
+                  Блинов Егор Егорович
+                </div>
+
+                <p class="doctor__profession">
+                  Врач-стоматолог
+                </p>
+
+                <div class="doctor__review">
+                  <p class="doctor__review-title">
+                    Опыт работы более 5 лет
+                  </p>
+
+                  <p class="doctor__review-sertificats">
+                    Действующие сертификаты:
+                  </p>
+
+                  <p class="doctor__review-text">
+                    стоматология общей практики; стоматология хирургическая
+                  </p>
+
+                  <p class="doctor__review-direction">
+                    Направленность:
+                  </p>
+
+                  <p class="doctor__review-text">
+                    имплантация, пародонтология, удаление зубов любой сложности
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="big-slider__item">
+              <div class="doctor">
+                <img class="doctor__img" src="images/doctors/big-img-3.png" alt="фото врача">
+
+                <div class="doctor__name">
+                  Кузьмин Артём Кириллович
+                </div>
+
+                <p class="doctor__profession">
+                  Врач-стоматолог <span>Ведущий специалист</span>
+                </p>
+
+                <div class="doctor__review">
+                  <p class="doctor__review-title">
+                    Опыт работы более 5 лет
+                  </p>
+
+                  <p class="doctor__review-sertificats">
+                    Действующие сертификаты:
+                  </p>
+
+                  <p class="doctor__review-text">
+                    стоматология общей практики; стоматология хирургическая
+                  </p>
+
+                  <p class="doctor__review-direction">
+                    Направленность:
+                  </p>
+
+                  <p class="doctor__review-text">
+                    протезирование зубов, хирургическое удаление, терапевтическое лечение и отбеливание
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="big-slider__item">
+              <div class="doctor">
+                <img class="doctor__img" src="images/doctors/big-img-4.png" alt="фото врача">
+
+                <div class="doctor__name">
+                  Соловьева Аделина Фёдоровна
+                </div>
+
+                <p class="doctor__profession">
+                  Врач-стоматолог <span>Ведущий специалист</span>
+                </p>
+
+                <div class="doctor__review">
+                  <p class="doctor__review-title">
+                    Опыт работы более 10 лет
+                  </p>
+
+                  <p class="doctor__review-sertificats">
+                    Действующие сертификаты:
+                  </p>
+
+                  <p class="doctor__review-text">
+                    стоматология общей практики; стоматология терапевтическая; стоматология ортодонтическая
+                  </p>
+
+                  <p class="doctor__review-direction">
+                    Направленность:
+                  </p>
+
+                  <p class="doctor__review-text">
+                    терапевтическое лечение, эстетическая реставрация зубов и исправление прикуса любой сложности
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="big-slider__item">
+              <div class="doctor">
+                <img class="doctor__img" src="images/doctors/big-img-5.png" alt="фото врача">
+
+                <div class="doctor__name">
+                  Дмитриева Анна Александровна
+                </div>
+
+                <p class="doctor__profession">
+                  Врач-стоматолог <span>Ведущий специалист</span>
+                </p>
+
+                <div class="doctor__review">
+                  <p class="doctor__review-title">
+                    Опыт работы более 20 лет
+                  </p>
+
+                  <p class="doctor__review-sertificats">
+                    Действующие сертификаты:
+                  </p>
+
+                  <p class="doctor__review-text">
+                    стоматология общей практики; стоматология ортопедическая
+                  </p>
+
+                  <p class="doctor__review-direction">
+                    Направленность:
+                  </p>
+
+                  <p class="doctor__review-text">
+                    терапевтическое лечение, все виды протезирования, хирургическое удаление зубов
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="big-slider__item">
+              <div class="doctor">
+                <img class="doctor__img" src="images/doctors/big-img-6.png" alt="фото врача">
+
+                <div class="doctor__name">
+                  Попова Дарья Даниловна
+                </div>
+
+                <p class="doctor__profession">
+                  Врач-стоматолог <span>Ведущий специалист</span>
+                </p>
+
+                <div class="doctor__review">
+                  <p class="doctor__review-title">
+                    Опыт работы более 5 лет
+                  </p>
+
+                  <p class="doctor__review-sertificats">
+                    Действующие сертификаты:
+                  </p>
+
+                  <p class="doctor__review-text">
+                    стоматология общей практики; стоматология хирургическая
+                  </p>
+
+                  <p class="doctor__review-direction">
+                    Направленность:
+                  </p>
+
+                  <p class="doctor__review-text">
+                    терапевтическое лечение, эстетическая реставрация, хирургическое удаление зубов , профессиональная
+                    гигиена и отбеливание
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <a class="doctors__button button button--transparent" href="#registration">
+          Записаться
+        </a>
+
+        <div class="doctors__social-wrapper social-wrapper">
+          <ul class="doctors__social social">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img" src="images/social/telegram.svg" alt="сылка на тлеграм">
+              </a>
+            </li>
+
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img" src="images/social/whatsapp.svg" alt="сылка на ватсап">
+              </a>
+            </li>
+          </ul>
+
+          <p class="social-wrapper__text">
+            спросить в мессенджере
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        <section id="assistant" class="assistant section">
+  <div class="container">
+
+    <h3 class="assistant__subtitle subtitle">
+      Выбрав, интересующую вас услугу ,<span>наш электронный помощник</span>, поможет вам быстро подобрать нужного
+      специалиста
+    </h3>
+
+    <ul class="assistant__inner">
+      <li class="assistant__item">
+        <a class="assistant__link" href="assistant_html/surgery.html">
+          <h5 class="assistant__item-title">
+            Хирургия
+          </h5>
+
+          <div class="assistant__item-img">
+            <img class="assistant__img" src="images/assistant/assistant-img-1.png" alt="Изображение удаления зуба"
+              width="73px" height="103px">
+          </div>
+        </a>
+      </li>
+
+      <li class="assistant__item">
+        <a class="assistant__link" href="assistant_html/therapy.html">
+          <h5 class="assistant__item-title">
+            Терапия
+          </h5>
+
+          <div class="assistant__item-img">
+            <img class="assistant__img" src="images/assistant/assistant-img-2.png"
+              alt="Изображение инструментов терапевта-стоматолога" width="73px" height="103px">
+          </div>
+        </a>
+      </li>
+
+      <li class="assistant__item">
+        <a class="assistant__link" href="assistant_html/orthopedics.html">
+          <h5 class="assistant__item-title">
+            Ортопедия
+          </h5>
+
+          <div class="assistant__item-img">
+            <img class="assistant__img" src="images/assistant/assistant-img-3.png" alt="Изображение коронки зуба"
+              width="73px" height="103px">
+          </div>
+        </a>
+      </li>
+
+      <li class="assistant__item">
+        <a class="assistant__link" href="assistant_html/implantation.html">
+          <h5 class="assistant__item-title">
+            Имплантация
+          </h5>
+
+          <div class="assistant__item-img">
+            <img class="assistant__img" src="images/assistant/assistant-img-4.png" alt="Изображение узубных имплантов"
+              width="73px" height="103px">
+          </div>
+        </a>
+      </li>
+
+      <li class="assistant__item">
+        <a class="assistant__link" href="assistant_html/orthodontics.html">
+          <h5 class="assistant__item-title">
+            Ортодонтия
+          </h5>
+
+          <div class="assistant__item-img">
+            <img class="assistant__img" src="images/assistant/assistant-img-5.png" alt="Изображение бректов на зубах"
+              width="73px" height="103px">
+          </div>
+        </a>
+      </li>
+
+      <li class="assistant__item">
+        <a class="assistant__link" href="assistant_html/whitening.html">
+          <h5 class="assistant__item-title">
+            Отбеливание
+          </h5>
+
+          <div class="assistant__item-img">
+            <img class="assistant__img" src="images/assistant/assistant-img-6.png" alt="Изображение отбеленного зуба"
+              width="73px" height="103px">
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+        <section id="reviews" class="reviews section">
+  <div class="container">
+    <h2 class="reviews__title title">
+      Отзывы
+    </h2>
+
+    <h3 class="reviews__subtitle subtitle">
+      Нашу клинику за годы работы посетили сотни пациентов. Всегда рады видеть довольных клиентов. Ваша улыбка - это
+      наша работа!
+    </h3>
+
+    <div class="reviews__slider">
+      <button class="reviews__btn-prew slide-arow slide-arow--prew" type="button">
+        <span class="sr-only">
+          кнопка переключения на предыдущий слайд
+        </span>
+      </button>
+
+      <button class="reviews__btn-next slide-arow slide-arow--next" type="button">
+        <span class="sr-only">
+          кнопка переключения на предыдущий слайд
+        </span>
+      </button>
+
+      <ul class="reviews__inner">
+        <li class="reviews__item">
+          <div class="reviews__box">
+            <div class="reviews__img-wrapper">
+              <img class="reviews__img" src="images/reviews/people-1.jpg" alt="фото пациента">
+            </div>
+
+            <div class="reviews__item-content">
+              <p class="reviews__name">
+                Данилова Ольга
+              </p>
+
+              <p class="reviews__text">
+                Клиника чистая, уютная. Персонал улыбчивый, вежливый, услужливый. Всегда объяснят если что не понятно
+                несколько раз, с
+                таким персоналом приятно общаться. Мне уделили довольно много времени, всё подробно рассказали и
+                проконсультировали.
+              </p>
+
+              <p class="reviews__date">
+                12.02.2020
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li class="reviews__item">
+          <div class="reviews__box">
+            <div class="reviews__img-wrapper">
+              <img class="reviews__img" src="images/reviews/people-2.jpg" alt="фото пациента">
+            </div>
+
+            <div class="reviews__item-content">
+              <p class="reviews__name">
+                Корчагина Алёна
+              </p>
+
+              <p class="reviews__text">
+                Хочу сказать огромное СПАСИБО врачам и персоналу Стоматологии Семейный Доктор. Я ваш вечный клиент и
+                главное
+                эксклюзивный. Очень рада что мы познакомились. СПАСИБО!
+              </p>
+
+              <p class="reviews__date">
+                12.02.2020
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li class="reviews__item">
+          <div class="reviews__box">
+            <div class="reviews__img-wrapper">
+              <img class="reviews__img" src="images/reviews/people-1.jpg" alt="фото пациента">
+            </div>
+
+            <div class="reviews__item-content">
+              <p class="reviews__name">
+                Данилова Ольга
+              </p>
+
+              <p class="reviews__text">
+                Клиника чистая, уютная. Персонал улыбчивый, вежливый, услужливый. Всегда объяснят если что не понятно
+                несколько раз, с
+                таким персоналом приятно общаться. Мне уделили довольно много времени, всё подробно рассказали и
+                проконсультировали.
+              </p>
+
+              <p class="reviews__date">
+                12.02.2020
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li class="reviews__item">
+          <div class="reviews__box">
+            <div class="reviews__img-wrapper">
+              <img class="reviews__img" src="images/reviews/people-2.jpg" alt="фото пациента">
+            </div>
+
+            <div class="reviews__item-content">
+              <p class="reviews__name">
+                Корчагина Алёна
+              </p>
+
+              <p class="reviews__text">
+                Хочу сказать огромное СПАСИБО врачам и персоналу Стоматологии Семейный Доктор. Я ваш вечный клиент и
+                главное
+                эксклюзивный. Очень рада что мы познакомились. СПАСИБО!
+              </p>
+
+              <p class="reviews__date">
+                12.02.2020
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="reviews__social">
+      <p class="reviews__social-text">
+        Оставить отзыв
+      </p>
+
+      <a class="reviews__social-link" href="#">
+        <img src="images/social/vk.png" alt="иконка вконтакте">
+      </a>
+    </div>
+  </div>
+</section>
+        <section id="documentation" class="documentation section">
+  <div class="container">
+    <h2 class="documentation__title title">
+      Лицензии и награды
+    </h2>
+
+    <h3 class="documentation__subtitle subtitle">
+      Деятельность клиники сертифицирована, мы имеем все необходимые лицензии и разрешающие документы.
+    </h3>
+
+    <div class="documentation__slider">
+      <button class="documentation__btn-prew slide-arow slide-arow--prew" type="button">
+        <span class="sr-only">
+          кнопка переключения на предыдущий слайд
+        </span>
+      </button>
+
+      <button class="documentation__btn-next slide-arow slide-arow--next" type="button">
+        <span class="sr-only">
+          кнопка переключения на предыдущий слайд
+        </span>
+      </button>
+
+      <ul class="documentation__inner">
+        <li class="documentation__item">
+              <img class="documentation__img" src="images/documentation/documentation-1.png" alt="фото документа">
+        </li>
+
+        <li class="documentation__item">
+              <img class="documentation__img" src="images/documentation/documentation-1.png" alt="фото документа">
+        </li>
+
+        <li class="documentation__item">
+              <img class="documentation__img" src="images/documentation/documentation-1.png" alt="фото документа">
+        </li>
+
+        <li class="documentation__item">
+              <img class="documentation__img" src="images/documentation/documentation-1.png" alt="фото документа">
+        </li>
+
+        <li class="documentation__item">
+              <img class="documentation__img" src="images/documentation/documentation-1.png" alt="фото документа">
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+        <section id="about" class="about section">
+  <div class="container">
+    <h2 class="about__title title">
+      О клинике
+    </h2>
+
+    <h3 class="about__subtitle subtitle">
+      Вы получите качественное лечение на современном оборудовании по приемлимым ценам
+    </h3>
+
+    <div class="about__content">
+      <div class="about__info">
+        <p class="about__info-text">
+          Философия клиники Ваша здоровая улыбка – наша работа. В стенах нашей стоматологической клиники Вы всегда
+          можете
+          рассчитывать на профессиональное оказание услуг в кратчайшие сроки.
+        </p>
+
+        <ul class="about__info-list">
+          <li class="about__info-item">
+            Современное оборудование, профессионализм врачей, опыт, а главное – внимательное отношение к пациенту.
+          </li>
+
+          <li class="about__info-item">
+            Главное направление – оказание качественной стоматологической помощи (детская стоматология, терапевтическое
+            лечение,
+            хирургическое лечение, имплантология, ортодонтическое лечение, ортопедия).
+          </li>
+
+          <li class="about__info-item">
+            Каждый месяц у нас проходят акции и специальные предложения
+          </li>
+        </ul>
+      </div>
+      
+      <div class="about__img-box">
+        <img class="about__info-img" src="images/about/info-img.jpg" alt="фото кабинета Стоматологии">
+      </div>
+    </div>
+
+    <div class="about__slider">
+      <button class="about__btn-prew slide-arow slide-arow--prew" type="button">
+        <span class="sr-only">
+          кнопка переключения на предыдущий слайд
+        </span>
+      </button>
+
+      <button class="about__btn-next slide-arow slide-arow--next" type="button">
+        <span class="sr-only">
+          кнопка переключения на предыдущий слайд
+        </span>
+      </button>
+
+      <ul class="about__inner">
+        <li class="about__item">
+          <div class="about__box">
+            <img class="about__img" src="images/about/img-1.jpg" alt="фото отзывы клиентов">
+          </div>
+        </li>
+
+        <li class="about__item">
+          <div class="about__box">
+            <img class="about__img" src="images/about/img-2.jpg" alt="фото отзывы клиентов">
+          </div>
+        </li>
+
+        <li class="about__item">
+          <div class="about__box">
+            <img class="about__img" src="images/about/img-3.jpg" alt="фото отзывы клиентов">
+          </div>
+        </li>
+
+        <li class="about__item">
+          <div class="about__box">
+            <img class="about__img" src="images/about/img-4.jpg" alt="фото отзывы клиентов">
+          </div>
+        </li>
+
+        <li class="about__item">
+          <div class="about__box">
+            <img class="about__img" src="images/about/img-3.jpg" alt="фото отзывы клиентов">
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+        <section id="registration" class="registration section">
+  <div class="registration__wrapper" style="background-image: url('images/bg/registration-bg.jpg')">
+    <div class="container">
+      <div class="registration__content record">
+        <div class="record__title">
+          Запишитесь на бесплатную первичную консультацию и диагностику зубов
+        </div>
+
+        <div class="record__subtitle">
+          В ходе консультации вы получите 2-3 плана качественного лечения под ваш бюджет
+        </div>
+
+        <form class="record__form" action="">
+          <label class="sr-only" for="name">Имя</label>
+          <input class="record__input" id="name" name="name" type="text" placeholder="Имя" required>
+
+          <label class="sr-only" for="phone">Телефон</label>
+          <input class="record__input" id="phone" name="phone" type="tel" placeholder="Телефон" required>
+
+          <button class="record__button button" type="button">
+            Записаться
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+        <section id="contacts" class="contacts section">
+
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30720.897955263943!2d38.764345095975976!3d55.089733259079814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6232c8c875860e4a!2zNTXCsDA1JzM4LjEiTiAzOMKwNDYnMTMuNCJF!5e0!3m2!1sru!2sru!4v1652530114773!5m2!1sru!2sru"
+      max-width="1920" width="100%" height="540" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <div class="contacts__wrapper">
+    <div class="container">
+      <div class="contacts__content">
+        <div class="contacts__title">
+          Контакты
+        </div>
+
+        <address class="contacts__address">
+          <p class="contacts__text">
+            г. Коломна, ул. Октябрьской революции д. 161
+          </p>
+
+          <a class="contacts__way" href="#">
+            Проложить маршрут
+          </a>
+
+          <p class="contacts__time">
+            с 9:00 до 21:00
+          </p>
+          <p class="contacts__time-text">
+            последняя запись до 19:00
+          </p>
+
+          <ul class="contacts__phones-inner">
+            <li class="contacts__phone">
+              <a class="contacts__phone-link" href="tel:+79850255566">
+                +7 (496) 614-15-15
+              </a>
+            </li>
+
+            <li class="contacts__phone">
+              <a class="contacts__phone-link" href="tel:+79260255767">
+                +7 (926) 025-57-67
+              </a>
+            </li>
+
+            <li class="contacts__phone">
+              <a class="contacts__phone-link" href="tel:+79850255566">
+                +7 (985) 025-55-66
+              </a>
+            </li>
+          </ul>
+
+          <div class="contacts__social-wrapper social-wrapper">
+            <ul class="contacts__social social">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="images/social/telegram.svg" alt="сылка на тлеграм">
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="images/social/whatsapp.svg" alt="сылка на ватсап">
+                </a>
+              </li>
+            </ul>
+
+            <p class="social-wrapper__text">
+              спросить в мессенджере
+            </p>
+          </div>
+
+          <div class="contacts__vk">
+            <a class="contacts__vk-link" href="#">
+              <img class="social__img" src="images/social/vk.png" alt="сылка на ВКонтакте">
+            </a>
+
+            <p class="contacts__vk-text">
+              Наша круппа в ВКонтакте
+            </p>
+          </div>
+        </address>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+      </main>
+
+      <footer class="footer">
+  <div class="footer__container container">
+    <div class="footer__logo-box logo-box" href="#">
+      <a class="logo-box__logo" href="#header">
+        <img class="logo-box__img" src="images/logo/logo.svg" alt="логотип клиники">
+      </a>
+
+      <div class="logo-box__text">
+        Стоматологическая клиника
+      </div>
+    </div>
+
+    <button class="burger" type="button">
+      <span class="burger__line"></span>
+      <span class="sr-only">Мобильное меню</span>
+    </button>
+
+    <nav class="footer__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="#header">
+            Главная
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#stock">
+            Aкции
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#services">
+            Услуги
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#doctors">
+            Врачи
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#reviews">
+            Отзывы
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#documentation">
+            Лицензии
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#about">
+            О клинике
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <a class="menu__link" href="#contacts">
+            Контакты
+          </a>
+        </li>
+      </ul>
+
+      <button class="menu__cross" type="button"></button>
+    </nav>
+  </div>
+</footer>
+    </div>
+
+    <div id="popup" class="popup">
+  <div class="popup__body">
+    <div class="popup__content">
+      <a class="popup__close close-popup close-button" href="#">
+        <span class="sr-only">
+          кнопка скрытия попап окна
+        </span>
+      </a>
+
+      <h4 class="popup__title">
+        Для участия в акции подпишитесь на нашу группу в ВКонтакте
+      </h4>
+
+      <button class="popup__button button button--transparent" type="button">
+        <span>Стать участником</span>
+      </button>
+
+      <div class="popup__social-wrapper social-wrapper">
+        <ul class="popup__social social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social__img" src="images/social/telegram.svg" alt="сылка на телеграм">
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social__img" src="images/social/whatsapp.svg" alt="сылка на ватсап">
+            </a>
+          </li>
+        </ul>
+
+        <p class="social-wrapper__text">
+          спросить в мессенджере
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="popup_2" class="popup">
+  <div class="popup__body">
+    <div class="popup__content">
+      <a class="popup__close close-popup close-button" href="#">
+        <span class="sr-only">
+          кнопка скрытия попап окна
+        </span>
+      </a>
+
+      <h4 class="popup__title  popup__title--price">
+        Скачайте прайс-лист и ознакомьтесь с ценами
+      </h4>
+
+      <button class="popup__button button button--transparent" type="button">
+        Скачать
+      </button>
+
+      <div class="popup__social-wrapper social-wrapper">
+        <ul class="popup__social social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social__img" src="images/social/telegram.svg" alt="сылка на телеграм">
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social__img" src="images/social/whatsapp.svg" alt="сылка на ватсап">
+            </a>
+          </li>
+        </ul>
+
+        <p class="social-wrapper__text">
+          спросить в мессенджере
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="popup_3" class="popup">
+  <div class="popup__body">
+    <div class="popup__content popup__content--video">
+      <a class="popup__close close-popup close-button" href="#">
+        <span class="sr-only">
+          кнопка скрытия попап окна
+        </span>
+      </a>
+
+      <iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?start=42"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
